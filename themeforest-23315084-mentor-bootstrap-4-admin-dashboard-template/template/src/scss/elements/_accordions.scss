@@ -1,0 +1,209 @@
+// NOTE: This file contains Accordion SCSS.
+
+.accordion {
+    .acd-group {
+      .card-header {
+          padding: 0rem;
+      .acd-heading {
+          font-weight: $font-medium;
+          font-size: $font-base;
+          position: relative;
+          color: $dark-gray;
+          line-height: normal;
+          padding: 1.25rem;
+          cursor: pointer;
+          background-color: transparent;
+          margin-bottom: 0px;
+          display: block;
+          border-radius: 3px;
+          text-transform: capitalize;
+          padding-right: 30px;
+           &:hover {
+               color: $primary;
+           }
+
+           &:before {
+               font-family: "themify-icons";
+              cursor: pointer;
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              display: block;
+              font-size: $font-base;
+              content:'\e622';
+              padding:1.4rem;
+             }
+             &.collapsed {
+             &:before {
+               font-family: "themify-icons";
+              cursor: pointer;
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              display: block;
+              font-size: $font-base;
+              content:'\e61a';
+              padding:1.4rem;
+             }
+           }
+           }
+          }
+       .acd-des {
+              padding: 0 20px 20px 0;
+         }
+        }
+       .acd-active {
+        .acd-heading {
+              color: $primary;
+
+          &:before {
+              content: "\f107";
+           }
+           }
+         }
+      }
+
+  /*plus-icon*/
+  .accordion.plus-icon {
+
+   .acd-group.acd-active {
+
+      .acd-heading {
+
+          &:before {
+               content: "\f068";
+               font-size:  $font-md;
+           }
+          }
+       }
+       .acd-group  {
+          .acd-heading {
+
+              &:before {
+                  content: "\f067";
+                  font-size:  $font-md;
+               }
+
+           }
+        }
+   }
+
+  /*plus-icon.round*/
+  .accordion.plus-icon.round {
+      .acd-group.acd-active {
+          .acd-heading {
+              &:before {
+                  content: "\f056";
+                  font-size:  $font-md;
+               }
+           }
+       }
+
+       .acd-group {
+          .acd-heading{
+              &:before {
+                  content: "\f055";
+                  font-size: $font-md;
+              }
+          }
+        }
+   }
+
+  /*gray*/
+  .accordion.gray {
+      .acd-heading {
+          background-color: $light-gray;
+          margin-bottom: 20px;
+          padding: 12px 24px;
+
+          &:hover {
+                 color: $white;
+                 background: $primary;
+               }
+       }
+       .acd-des {
+           padding: 0 30px 20px;
+       }
+
+       .acd-group.acd-active {
+              .acd-heading {
+                 color: $white;
+                 background: $primary;
+               }
+        }
+  }
+
+  /*shadow*/
+  .accordion.shadow {
+        .acd-heading {
+           background: $white;
+           @include box-shadow(0px, 5px, 10px, rgba(0, 0, 0, 0.1));
+           margin-bottom: 20px;
+           padding: 12px 24px;
+        }
+
+        .acd-des  {
+            padding: 0 30px 20px;
+        }
+
+        .acd-group.acd-active {
+          .acd-heading {
+              color: $white;
+              background: $primary;
+           }
+        }
+
+        .acd-group {
+         .acd-heading {
+
+             &:hover {
+              color: $white;
+              background: $primary;
+            }
+          }
+       }
+  }
+
+
+  /*border*/
+  .accordion.accordion-border {
+        .acd-heading {
+           background: transparent;
+           border:1px solid $light-gray;
+           box-shadow: none;
+           margin-bottom: 20px;
+           padding: 12px 24px;
+        }
+        .acd-des  {
+            padding: 0 30px 20px;
+        }
+
+        .acd-group.acd-active {
+          .acd-heading {
+              color: $white;
+              background: $primary;
+           }
+        }
+
+        .acd-group {
+         .acd-heading {
+
+             &:hover {
+              color: $white;
+              background: $primary;
+            }
+          }
+       }
+  }
+
+  /*no-radius*/
+  .accordion.no-radius {
+      .acd-heading {
+          border-radius: 0;
+      }
+  }
+  .card .card-header.border-radius-10 {
+      border-radius: 4px !important;
+  }
+
+

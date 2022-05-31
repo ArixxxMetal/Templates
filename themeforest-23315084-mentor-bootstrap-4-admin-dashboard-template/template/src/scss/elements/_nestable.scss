@@ -1,0 +1,48 @@
+.nestable-contant {
+    .dd-handle{
+        background: transparent;
+        border-color:$border-color;
+        height:40px;
+        padding: 10px 10px;
+        &:hover, &:focus{
+            color:$primary;
+        }
+    }
+    .dd3-content {
+        height: 40px;
+        padding: 10px 10px 10px 40px;
+        &:hover {
+            color:$primary;
+        }
+    }
+    #nestable2{
+        .dd-handle{
+            background: $primary;
+            border: 1px solid $primary;
+            color:$white;
+        }
+        .dd-item{
+            > button{
+                &:before {
+                    color:$white;
+                }
+            }
+        }
+    }
+}
+.dd-item{
+    > button{
+        &:before {
+            top: 9px;
+        }
+    }
+}
+.dd3-handle{
+    font-size: 0;
+    &:before {
+        top:8px;
+    }
+}
+.dd {
+    max-width: 100%;
+}

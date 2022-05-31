@@ -1,0 +1,145 @@
+.alert {
+	padding:1rem 3rem 1rem 1rem;
+	margin:0;
+	&.alert-primary {
+		background-color:$primary2;
+		border-color:$primary2;
+		color:$white;
+	}
+	&.alert-secondary {
+		background-color:$secondary;
+		border-color:$secondary;
+		color:$white;
+	}
+	&.alert-info {
+		background-color:$info;
+		border-color:$info;
+		color:$white;
+	}
+	&.alert-warning {
+		background-color:$warning;
+		border-color:$warning;
+		color:$white;
+	}
+	&.alert-danger {
+		background-color:$danger;
+		border-color:$danger;
+		color:$white;
+	}
+	&.alert-success {
+		background-color:$success;
+		border-color:$success;
+		color:$white;
+	}
+	&.alert-light {
+		background-color:$light-gray;
+		border-color:$light-gray;
+		color:$dark-gray;
+	}
+	&.alert-dark {
+		background-color:$dark-gray;
+		border-color:$dark-gray;
+		color:$white;
+	}
+}
+.alert {
+	&.alert-outline {
+		background-color:transparent;
+		&-primary {
+			border-color:$primary2;
+			color:$primary2;
+		}
+		&-secondary {
+			border-color:$secondary;
+			color:$secondary;
+		}
+		&-info {
+			border-color:$info;
+			color:$info;
+		}
+		&-warning {
+			border-color:$warning;
+			color:$warning;
+		}
+		&-danger {
+			border-color:$danger;
+			color:$danger;
+		}
+		&-success {
+			border-color:$success;
+			color:$success;
+		}
+		&-light {
+			border-color:darken($light-gray, 20%);
+			color:darken($light-gray, 20%);
+		}
+		&-dark {
+			border-color:$dark-gray;
+			color:$dark-gray;
+		}
+	}
+}
+.alert {
+	&.alert-inverse {
+		border-color:transparent;
+
+		&-primary {
+			@include hex-rgba($primary2, 0.3);
+			color:$primary2;
+		}
+		&-secondary {
+			@include hex-rgba($secondary, 0.3);
+			color:$secondary;
+		}
+		&-info {
+			@include hex-rgba($info, 0.3);
+			color:$info;
+		}
+		&-warning {
+			@include hex-rgba($warning, 0.3);
+			color:$warning;
+		}
+		&-danger {
+			@include hex-rgba($danger, 0.3);
+			color:$danger;
+		}
+		&-success {
+			@include hex-rgba($success, 0.3);
+			color:$success;
+		}
+		&-light {
+			@include hex-rgba($light-gray, 0.7);
+			color:$dark-gray;
+		}
+		&-dark {
+			@include hex-rgba($dark-gray, 0.3);
+			color:$dark-gray;
+		}
+	}
+}
+.alert {
+	&.alert-icon {
+		i {
+			margin-right:5px;
+		}
+	}
+}
+.alert {
+	&.alert-dismissible {
+		.close {
+			opacity:1;
+			text-shadow:none;
+			font-size: 1rem;
+			padding: 1.25rem;
+			height: 100%;
+			@include transition(all, 0.3s, ease-in-out); 
+			&:not(:disabled):not(.disabled):hover {
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):focus {
+				color:$white;
+				outline: 0;
+			}
+		}
+	}
+}

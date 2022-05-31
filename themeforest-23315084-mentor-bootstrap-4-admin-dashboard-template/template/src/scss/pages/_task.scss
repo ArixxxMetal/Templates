@@ -1,0 +1,49 @@
+.task-table{
+    .dot{
+        background-color: $primary;
+        border-radius: 10px;
+        margin-right: 6px;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+    }
+    tr{
+        border-bottom: 1px solid #dee2e6;
+        &:last-child{
+            border-bottom: 0px solid #dee2e6; 
+        }
+    }
+    .task-table-td{
+        .chat {
+            position: relative;
+            i{
+                font-size:18px;
+            }
+            .badge{
+                position: absolute;
+                top: -10px;
+                left: 20px;
+            }
+        }
+    }
+    td, th{
+        vertical-align: middle;
+        border-top: 0px solid #dee2e6;
+    }
+
+}
+
+.task-list-contant{
+    .table{
+        td, th, .card-header{
+            padding: 0.75rem 2rem;
+        }
+        td{
+            &:first-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+

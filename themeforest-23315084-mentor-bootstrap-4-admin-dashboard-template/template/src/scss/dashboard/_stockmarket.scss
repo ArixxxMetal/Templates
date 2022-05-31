@@ -1,0 +1,44 @@
+.stockmarket-contant{
+		.bg-img{
+		width: 35px;
+		height: 35px;
+	}
+	.stockmarket-contant-text{
+		padding: 1.25rem;
+	}
+	.table{
+		td, th{
+			vertical-align: middle;
+		}
+		tr{
+			td{
+				&:nth-child(2) {
+					display: flex;
+					align-items: center;
+
+					div{
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+	}
+
+}
+.bg-info, .bg-primary {
+	.col {
+		@include mobile-landscape {
+			flex-basis: auto;
+			margin-bottom: 10px;
+		 }
+		 @include mobile-portrait-sm {
+			flex-basis: auto;
+			margin-bottom: 10px;
+		}
+		   @include mobile-portrait-xs {
+			flex-basis: auto;
+			margin-bottom: 10px;
+		   }
+		
+	}
+}

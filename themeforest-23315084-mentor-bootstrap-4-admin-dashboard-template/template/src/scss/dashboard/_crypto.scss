@@ -1,0 +1,49 @@
+.crypto-currency {
+	.crypto{
+		font-size: 4rem;
+	}
+	.datatable-wrapper {
+		.table{
+			td, th {
+				vertical-align: middle;
+			}
+			td{
+				&:first-child{
+					i{
+						font-size:2.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+.crypto-chart-info { 
+	position: absolute; 
+	bottom: 0; 
+}
+
+.currency-price{
+	.input-group-text { 
+		background-color: rgba($primary, 0.1); 
+		border-color: rgba($primary, 0.1); 
+		color: $primary; font-weight: bold; 
+	}
+	.input-group-prepend {
+		select.form-control{
+			background-color: rgba($primary, 0.1); 
+			border-color: rgba($primary, 0.1); 
+			color: $primary; 
+			font-weight: bold;
+		}
+	}
+}
+.crypto-table{
+	tbody{
+		> tr {
+			> td {
+				font-weight: bold; 
+				color: $dark;
+			}
+		}
+	}
+}

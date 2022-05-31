@@ -1,0 +1,40 @@
+.contact-contant {
+    .form-check input[type=checkbox]{
+        content: '';
+        position: absolute;
+        left: 0; 
+        top: 0;
+        width: 1.25em; 
+        height: 1.25em;
+        border: 2px solid #ccc;
+        background: $white;
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+    .img-icon{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin-right: 1rem;
+    }
+    ul{
+        align-items: center;
+        padding:0.4rem 0;
+        li{
+            i{
+                font-size:16px;
+                color: $primary;
+            }
+        }
+        &.nav{
+            &:first-child{
+                margin-top: 1rem;
+            }
+            &:last-child{
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+

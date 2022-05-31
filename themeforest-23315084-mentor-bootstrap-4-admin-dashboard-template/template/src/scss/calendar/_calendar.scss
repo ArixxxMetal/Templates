@@ -1,0 +1,245 @@
+.fc-button {
+    background: $light-gray;
+    border: none;
+    color: $muted;
+    text-transform: capitalize;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border-radius: 3px !important;
+    margin: 0 3px !important;
+    padding: 6px 12px !important;
+    height: auto !important; 
+
+    &:focus {
+      outline: 0; 
+    }
+    &:active {
+      outline: 0; 
+    }
+}
+
+.fc-state-active {
+  background: $primary;
+  color: $white;
+}
+
+.fc-today-button {
+  background: $primary;
+  color: $white;
+}
+
+.fc-event {
+  border-radius: 2px;
+  border: none;
+  cursor: move;
+  font-size: 13px;
+  margin: 5px 0px;
+  padding: 10px 10px 10px 40px;
+  text-align: left;
+  position:relative;
+  &:before {
+    content:'';
+    position:absolute;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    top:10px;
+    left:15px;
+    }
+    &-primary {
+      @include hex-rgba($primary, 0.2);
+      color:$primary;
+      &:before {
+        @include hex-rgba($primary, 0.8);
+      }
+      &:hover {
+        color:$primary;
+      }
+    }
+    &-warning {
+      @include hex-rgba($warning, 0.2);
+      color:$warning;
+      &:before {
+        @include hex-rgba($warning, 0.8);
+      }
+      &:hover {
+        color:$warning;
+      }
+    }
+    &-danger {
+      @include hex-rgba($danger, 0.2);
+      color:$danger;
+      &:before {
+        @include hex-rgba($danger, 0.8);
+      }
+      &:hover {
+        color:$danger;
+      }
+    }
+    &-success {
+      @include hex-rgba($success, 0.2);
+      color:$success;
+      &:before {
+        @include hex-rgba($success, 0.8);
+      }
+      &:hover {
+        color:$success;
+      }
+    }
+}
+
+.fc-widget-content {
+  .fc-event {
+    border-radius: 2px;
+    border: none;
+    cursor: move;
+    font-size: 13px;
+    margin: 5px 0px;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    position:relative;
+    &:before {
+      content:'';
+      position:absolute;
+      width:0px;
+      height:0px;
+      border-radius:50%;
+      top:10px;
+      left:15px;
+    }
+    &-primary {
+      .fc-title {
+        color:$primary;
+      }
+    }
+    &-warning {
+      .fc-title {
+        color:$warning;
+      }
+    }
+    &-danger {
+      .fc-title {
+        color:$danger;
+      }
+    }
+    &-success {
+      .fc-title {
+        color:$success;
+      }
+    }
+ }
+}
+
+ .fc-event-dot {
+    background-color:$primary;
+ }
+.fc-day-grid-event{ 
+  .fc-time, .fc-title {
+    color: $white; 
+  }
+}
+
+.fc-unthemed{
+  .fc-content, .fc-divider, .fc-list-view, .fc-popover, .fc-row, tbody, th, td, thead{
+    border-color: #e8edf1;
+  }
+  .fc-list-heading{
+    td{
+      border-color: #e8edf1;
+      background: $light;
+    }
+  }
+  .fc-list-item{
+    &:hover td {
+      background-color: $light;
+    }
+  }
+}
+.fc-toolbar{ 
+  .fc-center{ 
+    h2 {
+        font-size: 1.5rem;
+    }
+  }
+}
+
+.fc-list-table{ 
+  .fc-widget-header {
+    background: $light;
+  }
+}
+
+@media (max-width: 767px){
+  .fc-toolbar{
+    .fc-left, .fc-right{
+      float: none;
+     display: inline-block;
+     clear: both;
+     text-align: center;
+    }
+    .fc-button{
+      padding: 8px 32px !important;
+    }  
+    .fc-center {
+      display: block;
+      h2 {
+          float: none;
+          margin-top: 0.5rem;
+          font-size: 1.8rem;
+      }
+    }
+  }
+ 
+}
+
+@media (max-width: 479px){
+  .fc-right{
+    .fc-button-group{
+      fc-button {
+          padding: 6px 25px !important;
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 400px){
+  .fc-left{
+    .fc-button {
+        padding: 6px 28px !important;
+    }
+  }
+  .fc-right{
+    .fc-button-group{
+      .fc-button {
+          padding: 6px 22px !important;
+      }
+    }
+  }
+
+}
+@media (max-width: 390px) and (min-width: 320px){
+  .fc-right{
+    .fc-button-group{
+      .fc-button {
+          padding: 6px 10px !important;
+      }
+    }
+  }
+  
+}
+@media (max-width: 360px){
+  .fc-left{
+    .fc-button {
+        padding: 6px 19px !important;
+    }
+  }
+  .fc-right{
+    .fc-button-group{
+      .fc-button {
+          padding: 6px 13px !important;
+      }
+    }
+  }
+  
+}

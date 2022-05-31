@@ -1,0 +1,110 @@
+/* Morris chart */
+.morris-wrapper {
+    svg text {
+        font-family: $font-primary !important;
+    }
+    .morris-hover{
+        z-index: 998;
+     }
+    
+}
+/* Chartist chart */
+.chartist-wrapper {
+    .ct-chart {
+        height: 350px;
+    }
+}
+
+.ct-series{
+    &-a{
+       .ct-bar, .ct-line, .ct-point, .ct-slice-donut{
+            stroke: $dark-gray;
+        }
+        .ct-area, .ct-slice-donut-solid, .ct-slice-pie{
+            fill:$primary;
+        } 
+    }
+    &-b{
+       .ct-bar, .ct-line, .ct-point, .ct-slice-donut{
+            stroke: $primary2;
+        } 
+        .ct-area, .ct-slice-donut-solid, .ct-slice-pie{
+            fill:$primary2;
+        }
+    }
+    &-c{
+       .ct-bar, .ct-line, .ct-point, .ct-slice-donut{
+            stroke: $warning;
+        } 
+    }
+    &-d{
+        .ct-area, .ct-slice-donut-solid, .ct-slice-pie{
+            fill:$success;
+        }
+    }
+}
+
+.ct-area {
+    fill-opacity: 0.3;
+}
+.ct-chart-donut, .ct-chart-pie{
+    .ct-label{
+        fill: $white;
+        color: $white;
+        font-size: 1rem; 
+    }
+}
+
+
+/* C3 Chart */
+.c3chart-wrapper {
+    .c3 {
+        height:300px;
+        text {
+            font-family: $font-primary;
+        }
+        .tick {
+            font-family: $font-primary;
+            fill: $muted;
+        }
+        .c3-legend-item {
+            text {
+                font-family: $font-primary;
+                fill: $muted;
+            }
+        }
+        line {
+            stroke:$muted;
+        }
+        path.domain {
+            stroke:$muted;
+            stroke-width: 1px;
+        }
+    }
+}
+/* Knob */
+.knob {
+    font-family: $font-primary !important;
+}
+
+.apexcharts-canvas {
+    margin:0 auto;
+}
+
+// apexchart
+.apexchart-tool-force-top .apexcharts-canvas, .apexchart-tool-force-top .col-12, .apexchart-tool-force-top .row{ position: inherit; }
+.apexchart-tool-force-top .apexcharts-toolbar { 
+    top: 17px;  right: 10px;
+
+    @include mobile-landscape {
+        display: none;
+    }
+    @include mobile-portrait-sm {
+        display: none;
+      }
+      @include mobile-portrait-xs {
+        display: none;
+      }
+}
+.apexcharts-zoom-icon svg, .apexcharts-zoom-in-icon svg, .apexcharts-zoom-out-icon svg, .apexcharts-reset-zoom-icon svg, .apexcharts-menu-icon svg { fill: $muted !important; }
+

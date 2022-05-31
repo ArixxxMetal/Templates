@@ -1,0 +1,15 @@
+.crm-contant{
+	table{
+		tr{
+		    border-bottom: 1px solid #dee2e6;
+		    &:last-child{
+			    border-bottom: 0px solid #dee2e6; 
+			}
+		}
+		td, th{
+			vertical-align: middle;
+    		border-top: 0px solid #dee2e6;
+		}
+	}
+}
+

@@ -1,0 +1,56 @@
+.bootstrap-duallistbox-container {
+    label {
+        color:$primary;
+    }
+    .filter {
+        height:40px;
+    }
+    .btn-group {
+        .btn {
+            border-color:$border-color;
+            &:hover, &:focus {
+                background-color:$primary;
+                border-color:$primary;
+                color: $white !important;
+            }
+            
+        }
+    }
+    .btn-outline-secondary{
+        background-color:$primary;
+        border-color:$primary;
+        color: $white !important;
+    }
+
+    select {
+        border-color:$border-color;
+        option {
+            padding:0.5rem;
+            color:$darker-gray;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    .box1 {
+        @include mobile-landscape {
+            margin-bottom: 1.5rem;
+        }
+        @include mobile-portrait-sm {
+            margin-bottom: 1.5rem;
+        }
+        @include mobile-portrait-xs {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+
+.bootstrap-duallistbox-container {
+    .box1.filtered, .box2.filtered {
+        .clear1, .clear2 {
+            margin-bottom: 10px;
+        }
+    }
+}
+

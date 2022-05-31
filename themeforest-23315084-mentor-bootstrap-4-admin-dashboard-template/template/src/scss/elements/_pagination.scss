@@ -1,0 +1,15 @@
+.page-link{
+	color: $primary;
+	&:hover, &:focus{
+		box-shadow:none;
+		color:$primary;
+	}
+}
+
+.page-item.active{ 
+	.page-link{
+	    background-color: $primary;
+	    border-color: $primary;
+	}
+}
+

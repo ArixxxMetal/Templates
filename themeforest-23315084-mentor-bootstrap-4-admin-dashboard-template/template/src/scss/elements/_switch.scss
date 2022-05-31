@@ -1,0 +1,375 @@
+/*switch*/
+.checkbox.checbox-switch {
+  padding-left: 0;
+  label{
+    display: inline-block;
+    position: relative;
+    padding-left: 0; 
+    input{
+      display: none;
+    }
+    span {
+      width: 55px;
+      border-radius: 20px;
+      height: 28px;
+      border: 1px solid #eeeeee;
+      background-color: $white;
+      border-color: #eeeeee;
+      box-shadow: #dfdfdf 0px 0px 0px 0px inset;
+      transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px; 
+      &::before{
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: $white;
+        content: " ";
+        top: 0;
+        position: relative;
+        left: 0;
+        @include transition;
+        @include box-shadow(0, 1px, 4px, rgba(0, 0, 0, 0.4));
+      }
+    }
+    > input:checked{
+      + span{
+        background-color: #b4b6b7;
+        border-color: #b4b6b7;
+        box-shadow: #b4b6b7 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        &:before{
+          left: 26px;
+        }
+      }
+      &:disabled{
+        + span{
+          background-color: $secondary;
+          border-color: $secondary;
+          box-shadow: $secondary 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+      }
+    }
+    > input:disabled {
+      + span {
+        background-color: #e8ebee;
+        border-color: $white; 
+        &:before{
+          background-color: #f8f9fa;
+          border-color: #f3f3f3;
+          @include box-shadow(0, 1px, 4px, rgba(0, 0, 0, 0.1));
+        }
+      }
+    }
+  } 
+  &.switch-light{
+    label{
+      > input:checked{
+        + span{
+          background-color: #f8f9fa;
+          border-color: #f8f9fa;
+          box-shadow: #f8f9fa 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+      }
+    }
+  }
+  &.switch-dark{
+    label{
+      > input:checked{
+        + span{
+          background-color: #343a40;
+          border-color: #343a40;
+          box-shadow: #343a40 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+        &:disabled{
+          + span{
+            background-color: #646668;
+            border-color: #646668;
+            box-shadow: #646668 0px 0px 0px 8px inset;
+            transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+          }
+        }
+      }
+    }
+  }
+  &.switch-success{
+    label{
+      > input:checked{
+        + span{
+          background-color: #28a745;
+          border-color: #28a745;
+          box-shadow: #28a745 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+        &:disabled {
+          + span{
+            background-color: #99d9a8;
+            border-color: #99d9a8;
+            box-shadow: #99d9a8 0px 0px 0px 8px inset; 
+          }
+        }
+      }
+    }
+  }
+  &.switch-danger{
+    label{
+      > input:checked{
+        + span{
+          background-color: #c82333;
+          border-color: #c82333;
+          box-shadow: #c82333 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+        &:disabled {
+          + span{
+            background-color: #d87781;
+            border-color: #d87781;
+            box-shadow: #d87781 0px 0px 0px 8px inset; 
+          }
+        }
+      }
+    }
+  }
+  &.switch-primary{
+    label{
+      > input:checked{
+        + span{
+          background-color: #0069d9;
+          border-color: #0069d9;
+          box-shadow: #0069d9 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+        &:disabled {
+          + span{
+            background-color: #6da3dd;
+            border-color: #6da3dd;
+            box-shadow: #6da3dd 0px 0px 0px 8px inset; 
+          }
+        }
+      }
+    }
+  }
+  &.switch-info{
+    label{
+      > input:checked{
+        + span{
+          background-color: #17a2b8;
+          border-color: #17a2b8;
+          box-shadow: #17a2b8 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+        &:disabled {
+          + span{
+            background-color: #66c0ce;
+            border-color: #66c0ce;
+            box-shadow: #66c0ce 0px 0px 0px 8px inset; 
+          }
+        }
+      }
+    }
+  }
+  &.switch-warning{
+    label{
+      > input:checked{
+        + span{
+          background-color: #ffc107;
+          border-color: #ffc107;
+          box-shadow: #ffc107 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+        &:disabled {
+          + span{
+            background-color: #e2c366;
+            border-color: #e2c366;
+            box-shadow: #e2c366 0px 0px 0px 8px inset; 
+          }
+        }
+      }
+    }
+  }
+}
+
+/************ checkbox inline *********/
+
+.checkbox-inline.checbox-switch {
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+  input{
+    display: none;
+  }
+  span {
+    width: 55px;
+    border-radius: 20px;
+    height: 28px;
+    border: 1px solid #eeeeee;
+    background-color: $white;
+    border-color: #eeeeee;
+    box-shadow: #dfdfdf 0px 0px 0px 0px inset;
+    transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; 
+    &::before{
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: $white;
+      content: " ";
+      top: 0;
+      position: relative;
+      left: 0;
+      @include transition;
+      @include box-shadow(0, 1px, 4px, rgba(0, 0, 0, 0.4));
+    }
+  }
+  > input:checked{
+    + span{
+      background-color: #b4b6b7;
+      border-color: #b4b6b7;
+      box-shadow: #b4b6b7 0px 0px 0px 8px inset;
+      transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      &:before{
+        left: 26px;
+      }
+    }
+    &:disabled{
+      + span{
+        background-color: $secondary;
+        border-color: $secondary;
+        box-shadow: $secondary 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      }
+    }
+  }
+  > input:disabled {
+    + span {
+      background-color: #e8ebee;
+      border-color: $white; 
+      &:before{
+        background-color: #f8f9fa;
+        border-color: #f3f3f3;
+        @include box-shadow(0, 1px, 4px, rgba(0, 0, 0, 0.1));
+      }
+    }
+  }
+  &.switch-light{
+    > input:checked{
+    + span{
+        background-color: #f8f9fa;
+        border-color: #f8f9fa;
+        box-shadow: #f8f9fa 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      }
+    }
+  }
+  &.switch-dark{
+    > input:checked{
+      + span{
+        background-color: #343a40;
+        border-color: #343a40;
+        box-shadow: #343a40 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      }
+      &:disabled{
+        + span{
+          background-color: #646668;
+          border-color: #646668;
+          box-shadow: #646668 0px 0px 0px 8px inset;
+          transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+        }
+      }
+    }
+  }
+  &.switch-success{
+    > input:checked{
+    + span{
+        background-color: #28a745;
+        border-color: #28a745;
+        box-shadow: #28a745 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      }
+      &:disabled {
+        + span{
+          background-color: #99d9a8;
+          border-color: #99d9a8;
+          box-shadow: #99d9a8 0px 0px 0px 8px inset; 
+        }
+      }
+    }
+  }
+  &.switch-danger{
+    > input:checked{
+    + span{
+        background-color: #c82333;
+        border-color: #c82333;
+        box-shadow: #c82333 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      }
+      &:disabled {
+        + span{
+          background-color: #d87781;
+          border-color: #d87781;
+          box-shadow: #d87781 0px 0px 0px 8px inset; 
+        }
+      }
+    }
+  }
+  &.switch-primary{
+    > input:checked{
+    + span{
+        background-color: #0069d9;
+        border-color: #0069d9;
+        box-shadow: #0069d9 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      }
+      &:disabled {
+        + span{
+          background-color: #6da3dd;
+          border-color: #6da3dd;
+          box-shadow: #6da3dd 0px 0px 0px 8px inset; 
+        }
+      }
+    }
+  }
+  &.switch-info{
+    > input:checked{
+    + span{
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        box-shadow: #17a2b8 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      }
+      &:disabled {
+        + span{
+          background-color: #66c0ce;
+          border-color: #66c0ce;
+          box-shadow: #66c0ce 0px 0px 0px 8px inset; 
+        }
+      }
+    }
+  }
+  &.switch-warning{
+    > input:checked{
+    + span{
+        background-color: #ffc107;
+        border-color: #ffc107;
+        box-shadow: #ffc107 0px 0px 0px 8px inset;
+        transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;
+      }
+      &:disabled {
+        + span{
+          background-color: #e2c366;
+          border-color: #e2c366;
+          box-shadow: #e2c366 0px 0px 0px 8px inset; 
+        }
+      }
+    }
+  }
+}

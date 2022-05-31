@@ -1,0 +1,43 @@
+.pricing-content{
+    h5{
+        color: $darker-gray;
+        font-size: $font-md;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 42px;
+    }
+    ul{
+        padding-left: 0px;
+        list-style: none;
+        li{
+            line-height: 30px;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+        }
+    }
+    a{
+        text-transform: capitalize;
+    }
+} 
+
+.pricing-highlight{
+    @include linear-gradient($primary, $primary2);
+    .pricing-content{
+        h5{
+            color:$white;
+        }
+        h2{
+            color:$white !important;
+        }
+        p{
+            color:$white !important;
+        }
+        ul{
+            li{
+                color:$white !important;
+            }
+        }
+    }
+}
+

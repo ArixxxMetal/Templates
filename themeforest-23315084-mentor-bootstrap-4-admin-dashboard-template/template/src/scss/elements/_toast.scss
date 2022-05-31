@@ -1,0 +1,21 @@
+#toastrOptions {
+    background: #f6f7f8;
+    padding: 30px;
+}
+
+.toast{
+	&-success{
+	    background-color: $success;
+	}
+
+	&-error{
+	    background-color: $danger;
+	}
+	&-info{
+	    background-color: $info;
+	}
+	&-warning{
+	    background-color: $warning;
+	}
+
+}

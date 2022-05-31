@@ -1,0 +1,39 @@
+.error-contant{
+	.error-innr{
+	    height: 100vh;
+	    width:100%;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		object-fit: cover;
+		.container {
+			@include mobile-portrait-sm {
+				max-width: 100%;
+			}
+			@include mobile-portrait-xs {
+				max-width: 100%;
+			}
+		}
+	}
+	.row {
+	    height:100vh;
+	}
+}
+
+
+
+.st0{fill:$primary; }
+.st1{fill:$body;}
+.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#A37DFF;}
+.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#CCBBFF;}
+.st4{fill-rule:evenodd;clip-rule:evenodd;fill:$body;}
+.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#90C9EA;}
+.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#ABC3FF;}
+.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#79A1F2;}
+.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#618DE5;}
+.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#7B91FF;}
+.st10{fill-rule:evenodd;clip-rule:evenodd;fill:#80C3FF;}
+.st11{fill-rule:evenodd;clip-rule:evenodd;fill:#494089;}
+
+
+

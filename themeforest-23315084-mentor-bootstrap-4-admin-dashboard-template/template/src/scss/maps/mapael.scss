@@ -1,0 +1,12 @@
+.mapael{
+
+	 path {
+	    fill:$primary;
+	    stroke: $light-gray;
+
+	    &:hover {
+		    fill:$warning;
+		    stroke: $warning;
+		}
+	}
+}

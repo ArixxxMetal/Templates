@@ -1,0 +1,138 @@
+.analytics-contant {
+	.analytics-contant-text1{
+		h4{
+			font-size: 2.3rem;
+		}
+		.d-flex{
+			border-bottom: 1px solid #dee2e6;
+			border-width: 10%;
+			padding-bottom: 2rem;
+			&:last-child {
+				border-bottom: none;
+				padding-bottom: 0;
+			}
+		}
+	}
+	.img-icon{
+		.font-38{
+			line-height: 62px;
+		}
+	}
+	.table{
+		tr{
+			td{
+				vertical-align: middle;
+			}
+		}
+		th{
+			vertical-align: middle;
+		}
+	}
+	.visitors-wrapper{
+		.card-title{
+			padding:1.25rem;
+		}
+		table{
+			th, td{
+				padding: 0.6rem 1.25rem;
+			}
+		}
+	}
+}
+
+.site-logo {
+	i{
+		font-size: 2.143rem !important;
+	    line-height: 2.143rem;
+	}
+}
+
+
+.desktop, .tablet, .mobile{
+	i{
+		font-size: 2.142rem;
+	    line-height: 2.571rem;
+	}
+}
+
+.secondary-menu {
+	a {
+		margin-left: 1rem;
+		@include tablet-landscape {
+		    margin-left: 0.7rem;
+		}
+		@include tablet-portrait {
+		    margin-left: 0.7rem;
+		}
+		@include mobile-landscape {
+			margin-left: 0.7rem;
+		}
+		@include mobile-portrait-sm {
+			margin-left: 0.7rem;
+		}
+		@include mobile-portrait-xs {
+			margin-left: 0.7rem;
+		}
+	}
+	a:first-child {
+		@include tablet-landscape {
+			margin-left: 0;
+		}
+		@include tablet-portrait {
+			margin-left: 0;
+		}
+		@include mobile-landscape {
+			margin-left: 0;
+		}
+		@include mobile-portrait-sm {
+			margin-left: 0;
+		}
+		@include mobile-portrait-xs {
+			margin-left: 0;
+		}
+	}
+	.btn.btn-icon { 
+		width: 40px; 
+		height: 40px; 
+		line-height: 40px; 
+		font-size: 1.3rem; 
+		background: $white; 
+		color: $primary; 
+		box-shadow: 0px 0px 20px rgba(115, 105, 215, 0.2)
+	}
+}
+.page-title {
+	@include mobile-landscape {
+		border-right: 0 !important;
+		margin-right:0 !important;
+		padding-right:0 !important;
+	}
+	@include mobile-portrait-sm {
+		border-right: 0 !important;
+		margin-right:0 !important;
+		padding-right:0 !important;
+	}
+	@include mobile-portrait-xs {
+		border-right: 0 !important;
+		margin-right:0 !important;
+		padding-right:0 !important;
+	}
+}
+.breadcrumb-bar {
+	margin: 1rem 0;
+}
+
+#analytics10 { 
+	min-height: auto !important; 
+	 height: 80px !important; 
+	 
+	 @include mobile-landscape {
+		height: 160px !important;
+	}
+	@include mobile-portrait-sm {
+		height: 160px !important;
+	}
+	@include mobile-portrait-xs {
+		height: 160px !important;
+	}
+}

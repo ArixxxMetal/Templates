@@ -1,0 +1,45 @@
+.faq-contant{
+    .accordion{
+        .card {
+            -webkit-box-shadow: 0px 0px 5px #ccc;
+            -moz-box-shadow: 0px 0px 5px #ccc;
+            box-shadow: 0px 0px 5px #ccc;
+            margin-bottom:16px;
+
+            &:last-child{
+                margin-bottom:3rem;
+            }
+        }
+    }
+    .nav{
+        .nav-link{
+            &.active{
+                h5, p{
+                    color:$white;
+                    line-height: 1.4rem;
+                }
+            }
+            p{
+                line-height: 1.4rem; 
+            }
+        }
+    }
+    .tab-content{
+        .card-header{
+            .btn{
+                font-size: 16px;
+                font-weight: bold;
+                color: $primary;
+
+                &:focus{
+                    box-shadow: none;
+                }
+            }    
+        }   
+    }
+}
+
+
+
+
+

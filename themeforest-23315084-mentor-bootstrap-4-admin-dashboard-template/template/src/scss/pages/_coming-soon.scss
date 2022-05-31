@@ -1,0 +1,20 @@
+.comingsoon {
+    .form-control.bg-white-inverse {
+        color:$white; 
+        border:0;
+        background:rgba(255,255,255,0.25);
+        color:$white;
+    }
+    ::-webkit-input-placeholder { 
+      color: $white;
+    }
+    ::-moz-placeholder { 
+      color: $white;
+    }
+    :-ms-input-placeholder {
+      color: $white;
+    }
+    :-moz-placeholder { 
+      color: $white;
+    }
+}

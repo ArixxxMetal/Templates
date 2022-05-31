@@ -1,0 +1,166 @@
+.badge {
+    padding: .4em .8em;
+    font-weight: 500;
+    line-height: 1.3;
+    &-primary {
+        background-color:$primary;
+        color:$white;
+        &[href]:hover {
+            background-color:$primary;
+            color:$white;
+        }
+        &[href]:focus {
+            background-color:$primary;
+            color:$white;
+        }
+        &-inverse {
+            @include hex-rgba($primary, 0.10);
+            color:$primary;
+
+            &:hover, &:focus {
+                color:$primary;
+            }
+        }
+    }
+
+    &-secondary {
+        background-color:$secondary;
+        color:$white;
+        &[href]:hover {
+            background-color:$secondary;
+            color:$white;
+        }
+        &[href]:focus {
+            background-color:$secondary;
+            color:$white;
+        }
+        &-inverse {
+            @include hex-rgba($secondary, 0.10);
+            color:$secondary;
+
+            &:hover, &:focus {
+                color:$secondary;
+            }
+        }
+    }
+    &-info {
+        background-color:$info;
+        color:$white;
+        &[href]:hover {
+            background-color:$info;
+            color:$white;
+        }
+        &[href]:focus {
+            background-color:$info;
+            color:$white;
+        }
+        &-inverse {
+            @include hex-rgba($info, 0.10);
+            color:$info;
+
+            &:hover, &:focus {
+                color:$info;
+            }
+        }
+    }
+    &-warning {
+        background-color:$warning;
+        color:$white;
+        &[href]:hover {
+            background-color:$warning;
+            color:$white;
+        }
+        &[href]:focus {
+            background-color:$warning;
+            color:$white;
+        }
+        &-inverse {
+            @include hex-rgba($warning, 0.10);
+            color:$warning;
+
+            &:hover, &:focus {
+                color:$warning;
+            }
+        }
+    }
+    &-danger {
+        background-color:$danger;
+        color:$white;
+        &[href]:hover {
+            background-color:$danger;
+            color:$white;
+        }
+        &[href]:focus {
+            background-color:$danger;
+            color:$white;
+        }
+        &-inverse {
+            @include hex-rgba($danger, 0.10);
+            color:$danger;
+
+            &:hover, &:focus {
+                color:$danger;
+            }
+        }
+    }
+    &-light {
+        background-color:$light-gray;
+        color:$dark-gray;
+        &[href]:hover {
+            background-color:$light-gray;
+            color:$dark-gray;
+        }
+        &[href]:focus {
+            background-color:$light-gray;
+            color:$dark-gray;
+        }
+        &-inverse {
+            @include hex-rgba($light-gray, 0.60);
+            color:$dark-gray;
+
+            &:hover, &:focus {
+                color:$dark-gray;
+            }
+        }
+    }
+    &-dark {
+        background-color:$dark-gray;
+        color:$white;
+        &[href]:hover {
+            background-color:$dark-gray;
+            color:$white;
+        }
+        &[href]:focus {
+            background-color:$dark-gray;
+            color:$white;
+        }
+        &-inverse {
+            @include hex-rgba($dark-gray, 0.10);
+            color:$dark-gray;
+
+            &:hover, &:focus {
+                color:$dark-gray;
+            }
+        }
+    }
+    &-success {
+        background-color:$success;
+        color:$white;
+        &[href]:hover {
+            background-color:$success;
+            color:$white;
+        }
+        &[href]:focus {
+            background-color:$success;
+            color:$white;
+        }
+        &-inverse {
+            @include hex-rgba($success, 0.10);
+            color:$success;
+
+            &:hover, &:focus {
+                color:$success;
+            }
+        }
+    }
+}

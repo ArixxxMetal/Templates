@@ -1,0 +1,93 @@
+	/*
+Template Name: Webster Admin Template
+Author: Potenza Global Solutions
+File: Main Style
+*/
+
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/helpers";
+@import "partials/layout";
+@import "partials/header";
+@import "partials/menu";
+@import "partials/navigation";
+@import "partials/typography";
+
+@import "dashboard/cardealer";
+@import "dashboard/dating";
+@import "dashboard/jobportal";
+@import "dashboard/stockmarket";
+@import "dashboard/analytics";
+@import "dashboard/crm";
+@import "dashboard/crypto";
+@import "dashboard/ecommerce";
+@import "dashboard/realestate";
+
+
+@import "elements/accordions";
+@import "elements/badges";
+@import "elements/cards";
+@import "elements/alerts";
+@import "elements/buttons";
+@import "elements/progressbar";
+@import "elements/nav";
+@import "elements/listgroup";
+@import "elements/pagination";
+@import "elements/switch";
+@import "elements/tabs";
+@import "elements/lightbox";
+@import "elements/nestable";
+@import "elements/modals";
+@import "elements/media";
+@import "elements/toast";
+@import "elements/sweetalert";
+@import "elements/grid";
+
+
+@import "calendar/calendar";
+
+@import "chat/chat";
+@import "mail/mail";
+
+
+@import "icons/icons";
+
+@import "forms/datepicker";
+@import "forms/controls";
+@import "forms/editors";
+@import "forms/fileupload";
+@import "forms/input-groups";
+@import "forms/listbox";
+@import "forms/selects";
+@import "forms/rangesliders";
+
+@import "tables/table-color";
+@import "tables/data-table";
+@import "tables/export-table";
+
+@import "maps/gmap";
+@import "maps/vmap";
+@import "maps/mapael";
+
+@import "chart/flot";
+@import "chart/charts";
+
+@import "widget/list";
+@import "widget/social";
+@import "widget/chart";
+
+@import "pages/account";
+@import "pages/task";
+@import "pages/error";
+@import "pages/pricing";
+@import "pages/faq";
+@import "pages/gallery";
+@import "pages/clients";
+@import "pages/contact";
+@import "pages/employees";
+@import "pages/coming-soon";
+
+
+
+

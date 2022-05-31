@@ -1,0 +1,317 @@
+//Bootstrap Breakpoints
+
+/* example taken from https://stackoverflow.com/a/48976550/3466464 */
+/* import what we need to override */
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+
+/* set the overriding variables */
+$grid-breakpoints: (
+  xxxs: 0,
+  xxs: 480px,
+  xs: 576px,
+  sm: 667px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1600px
+);
+$container-max-widths: (
+  xxxs: 0,
+  xxs: 480px,
+  xs: 576px,
+  sm: 667px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1600px
+);
+
+/* override the !default vars with the values we set above */
+@import "../bootstrap/scss/bootstrap";
+
+
+// Colors
+$body 	  		: #f9f9fb;
+$primary  		: #8E54E9;
+$primary2		  : #4776E6;
+$secondary    : #a1a1a1;
+$light-gray		: #eceef3;
+$dark-gray		: #2c2e3e;
+$darker-gray  : #333333;
+$muted 			  : #a6a9b7;
+$info			    : #45aaf2;
+$danger			  : #e3324c;
+$cyan			    : #2bcbba;
+$warning		  : #f7b731;
+$orange			  : #fd9644;
+$pink			    : #fb0792;
+$success		  : #32b432;
+$white			  : #ffffff;
+$black			  : #000000;
+
+$sidebar-dark	: #2c2e3e;
+$sidebar-text : #a2a5bd;
+$border-color : #dee2e6;
+
+// Social media
+
+$facebook 		: #3b5998;
+$twitter		  : #00aced;
+$linkedin		  : #0077B5;
+$dribble		  : #c73b65;
+$googleplus		: #d34836;
+$instagram		: #c32aa3;
+$pinterest		: #c92228;
+$dropbox		  : #3d9ae8;
+$flickr			  : #0063DC;
+$tumblr			  : #34526f;
+$skype			  : #12a5f4;
+$youtube		  : #c4302b;
+$github			  : #4078c0;
+$behance      : #053eff;
+$whatsapp     : #4FCE5D;
+
+// Font family
+$font-primary	: 'Roboto', sans-serif;
+
+//Font size
+
+$font-xs		: 0.8571rem;
+$font-s 		: 0.9286rem;
+$font-base		: 1rem;
+$font-md 		: 1.285rem;
+$font-lg 		: 1.714rem;
+$font-xl		: 2.142rem;
+$font-xxl		: 2.571rem;
+$font-xxxl		: 3rem;
+
+// Line heights
+
+$line-xs		: 1.145rem;
+$line-s			: 1.22rem;
+$line-base	: 1.428rem;
+$line-md    : 1.714rem;
+$line-lg   	: 2.142rem;
+$line-xl		: 2.571rem;
+$line-xxl		: 3.142rem;
+
+// font-size
+
+$font-9         : 0.5625rem;
+$font-10        : 0.625rem;
+$font-11        : 0.6875rem;
+$font-12        : 0.75rem;
+$font-13        : 0.8125rem;
+$font-14        : 0.875rem;
+$font-15        : 0.9375rem;
+$font-16        : 1rem;
+$font-17        : 1.063rem;
+$font-18        : 1.125rem;
+$font-19        : 1.188rem;
+$font-20        : 1.25rem;
+$font-21        : 1.313rem;
+$font-22        : 1.375rem;
+$font-23        : 1.438rem;
+$font-24        : 1.5rem;
+$font-25        : 1.563rem;
+$font-26        : 1.625rem;
+$font-27        : 1.688rem;
+$font-28        : 1.75rem;
+$font-29        : 1.813rem;
+$font-30        : 1.875rem;
+$font-31        : 1.938rem;
+$font-32        : 2rem;
+$font-33        : 2.063rem;
+$font-34        : 2.125rem;
+$font-35        : 2.188rem;
+$font-36        : 2.25rem;
+$font-37        : 2.313rem;
+$font-38        : 2.375rem;
+$font-39        : 2.438rem;
+$font-40        : 2.5rem;
+$font-41        : 2.563rem;
+$font-42        : 2.625rem;
+$font-43        : 2.688rem;
+$font-44        : 2.75rem;
+$font-45        : 2.813rem;
+$font-46        : 2.875rem;
+$font-47        : 2.938rem;
+$font-48        : 3rem;
+$font-49        : 3.063rem;
+$font-50        : 3.125rem;
+$font-51        : 3.188rem;
+$font-52        : 3.25rem;
+$font-53        : 3.313rem;
+$font-54        : 3.375rem;
+$font-55        : 3.438rem;
+$font-56        : 3.5rem;
+$font-57        : 3.563rem;
+$font-58        : 3.625rem;
+$font-59        : 3.688rem;
+$font-60        : 3.75rem;
+$font-61        : 3.813rem;
+$font-62        : 3.875rem;
+$font-63        : 3.938rem;
+$font-64        : 4rem;
+$font-65        : 4.063rem;
+$font-66        : 4.125rem;
+$font-67        : 4.188rem;
+$font-68        : 4.25rem;
+$font-69        : 4.313rem;
+$font-70        : 4.375rem;
+$font-71        : 4.438rem;
+$font-72        : 4.5rem;
+$font-73        : 4.563rem;
+$font-74        : 4.625rem;
+$font-75        : 4.688rem;
+$font-76        : 4.75rem;
+$font-77        : 4.813rem;
+$font-78        : 4.875rem;
+$font-79        : 4.938rem;
+$font-80        : 5rem;
+$font-81        : 5.063rem;
+$font-82        : 5.125rem;
+$font-83        : 5.188rem;
+$font-84        : 5.25rem;
+$font-85        : 5.313rem;
+$font-86        : 5.375rem;
+$font-87        : 5.438rem;;
+$font-88        : 5.5rem;
+$font-89        : 5.563rem;
+$font-90        : 5.625rem;
+$font-91        : 5.688rem;
+$font-92        : 5.75rem;
+$font-93        : 5.813rem;
+$font-94        : 5.875rem;
+$font-95        : 5.938rem;
+$font-96        : 6rem;
+$font-97        : 6.063rem;
+$font-98        : 6.125rem;
+$font-99        : 6.188rem;
+$font-100       : 6.25rem;
+
+
+// line-height
+
+$line-10        : 0.625rem;
+$line-11        : 0.6875rem;
+$line-12        : 0.75rem;
+$line-13        : 0.8125rem;
+$line-14        : 0.875rem;
+$line-15        : 0.9375rem;
+$line-16        : 1rem;
+$line-17        : 1.063rem;
+$line-18        : 1.125rem;
+$line-19        : 1.188rem;
+$line-20        : 1.25rem;
+$line-21        : 1.313rem;
+$line-22        : 1.375rem;
+$line-23        : 1.438rem;
+$line-24        : 1.5rem;
+$line-25        : 1.563rem;
+$line-26        : 1.625rem;
+$line-27        : 1.688rem;
+$line-28        : 1.75rem;
+$line-29        : 1.813rem;
+$line-30        : 1.875rem;
+$line-31        : 1.938rem;
+$line-32        : 2rem;
+$line-33        : 2.063rem;
+$line-34        : 2.125rem;
+$line-35        : 2.188rem;
+$line-36        : 2.25rem;
+$line-37        : 2.313rem;
+$line-38        : 2.375rem;
+$line-39        : 2.438rem;
+$line-40        : 2.5rem;
+$line-41        : 2.563rem;
+$line-42        : 2.625rem;
+$line-43        : 2.688rem;
+$line-44        : 2.75rem;
+$line-45        : 2.813rem;
+$line-46        : 2.875rem;
+$line-47        : 2.938rem;
+$line-48        : 3rem;
+$line-49        : 3.063rem;
+$line-50        : 3.125rem;
+$line-51        : 3.188rem;
+$line-52        : 3.25rem;
+$line-53        : 3.313rem;
+$line-54        : 3.375rem;
+$line-55        : 3.438rem;
+$line-56        : 3.5rem;
+$line-57        : 3.563rem;
+$line-58        : 3.625rem;
+$line-59        : 3.688rem;
+$line-60        : 3.75rem;
+$line-61        : 3.813rem;
+$line-62        : 3.875rem;
+$line-63        : 3.938rem;
+$line-64        : 4rem;
+$line-65        : 4.063rem;
+$line-66        : 4.125rem;
+$line-67        : 4.188rem;
+$line-68        : 4.25rem;
+$line-69        : 4.313rem;
+$line-70        : 4.375rem;
+$line-71        : 4.438rem;
+$line-72        : 4.5rem;
+$line-73        : 4.563rem;
+$line-74        : 4.625rem;
+$line-75        : 4.688rem;
+$line-76        : 4.75rem;
+$line-77        : 4.813rem;
+$line-78        : 4.875rem;
+$line-79        : 4.938rem;
+$line-80        : 5rem;
+$line-81        : 5.063rem;
+$line-82        : 5.125rem;
+$line-83        : 5.188rem;
+$line-84        : 5.25rem;
+$line-85        : 5.313rem;
+$line-86        : 5.375rem;
+$line-87        : 5.438rem;;
+$line-88        : 5.5rem;
+$line-89        : 5.563rem;
+$line-90        : 5.625rem;
+$line-91        : 5.688rem;
+$line-92        : 5.75rem;
+$line-93        : 5.813rem;
+$line-94        : 5.875rem;
+$line-95        : 5.938rem;
+$line-96        : 6rem;
+$line-97        : 6.063rem;
+$line-98        : 6.125rem;
+$line-99        : 6.188rem;
+$line-100       : 6.25rem;
+
+// Font weights
+
+$font-bold		: 700;
+$font-medium 	: 500;
+$font-semibold 	: 600;
+$font-regular	: 400;
+$font-light		: 300;
+
+
+
+
+// Responsive widths
+$mobile-portrait: 320px;
+$mobile-portrait-sm: 480px;
+$mobile-landscape: 577px;
+$tablet-portrait: 768px;
+$tablet-landscape: 1024px;
+$laptop: 1200px;
+$desktop: 1440px;
+$desktop-lg: 1600px;
+
+
+//Sidebar width
+$sidebar		: 240px;
+$sidebar-mini	: 60px;
+
+

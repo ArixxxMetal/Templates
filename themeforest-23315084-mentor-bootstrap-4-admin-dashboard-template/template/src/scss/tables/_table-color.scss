@@ -1,0 +1,159 @@
+.table {
+    &-primary {
+        @include hex-rgba($primary, 0.1);
+        color:$primary;
+        th {
+            @include hex-rgba($primary, 0.1);
+            color:$primary;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($primary, 0.1);
+            color:$primary;
+            border-color: $white !important;
+        }
+    }
+    &-secondary {
+        @include hex-rgba($secondary, 0.1);
+        color:$secondary;
+        th {
+            @include hex-rgba($secondary, 0.1);
+            color:$secondary;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($secondary, 0.1);
+            color:$secondary;
+            border-color: $white !important;
+        }
+    }
+
+    &-info {
+        @include hex-rgba($info, 0.1);
+        color:$info;
+        th {
+            @include hex-rgba($info, 0.1);
+            color:$info;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($info, 0.1);
+            color:$info;
+            border-color: $white !important;
+        }
+    }
+    &-warning {
+        @include hex-rgba($warning, 0.1);
+        color:$warning;
+        th {
+            @include hex-rgba($warning, 0.1);
+            color:$warning;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($warning, 0.1);
+            color:$warning;
+            border-color: $white !important;
+        }
+    }
+    &-danger {
+        @include hex-rgba($danger, 0.1);
+        color:$danger;
+        th {
+            @include hex-rgba($danger, 0.1);
+            color:$danger;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($danger, 0.1);
+            color:$danger;
+            border-color: $white !important;
+        }
+    }
+    &-success {
+        @include hex-rgba($success, 0.1);
+        color:$success;
+        th {
+            @include hex-rgba($success, 0.1);
+            color:$success;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($success, 0.1);
+            color:$success;
+            border-color: $white !important;
+        }
+    }
+    &-orange {
+        @include hex-rgba($orange, 0.1);
+        color:$orange;
+        th {
+            @include hex-rgba($orange, 0.1);
+            color:$orange;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($orange, 0.1);
+            color:$orange;
+            border-color: $white !important;
+        }
+    }
+    &-pink {
+        @include hex-rgba($pink, 0.1);
+        color:$pink;
+        th {
+            @include hex-rgba($pink, 0.1);
+            color:$pink;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($pink, 0.1);
+            color:$pink;
+            border-color: $white !important;
+        }
+    }
+    &-yellow {
+        @include hex-rgba($yellow, 0.1);
+        color:$yellow;
+        th {
+            @include hex-rgba($yellow, 0.1);
+            color:$yellow;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($yellow, 0.1);
+            color:$yellow;
+            border-color: $white !important;
+        }
+    }
+    &-red {
+        @include hex-rgba($danger, 0.1);
+        color:$danger;
+        th {
+            @include hex-rgba($danger, 0.1);
+            color:$danger;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($danger, 0.1);
+            color:$danger;
+            border-color: $white !important;
+        }
+    }
+    &-cyan {
+        @include hex-rgba($cyan, 0.1);
+        color:$cyan;
+        th {
+            @include hex-rgba($cyan, 0.1);
+            color:$cyan;
+            border-color: $white !important;
+        }
+        td {
+            @include hex-rgba($cyan, 0.1);
+            color:$cyan;
+            border-color: $white !important;
+        }
+    }
+}
+
+

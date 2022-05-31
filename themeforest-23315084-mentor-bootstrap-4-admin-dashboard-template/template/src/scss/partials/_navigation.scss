@@ -1,0 +1,422 @@
+.app-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $sidebar;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: all 0.3s ease-out;
+    display: block;
+    padding-top:60px;
+    height: 100%;
+    @include box-shadow(1px, 10px, 20px, rgba(115, 105, 215, 0.15));
+    z-index: 1050;
+    @include mobile-landscape {
+        position: fixed;
+        left: -$sidebar;
+        height:100%;
+    }
+    @include mobile-portrait-sm {
+        position: fixed;
+        left: -$sidebar;
+        height:100%;
+    }
+    @include mobile-portrait-xs {
+        position: fixed;
+        left: -$sidebar;
+        height:100%;
+    }
+    &.expand {
+        left: 0;
+        padding-top:60px;
+        height:100%;
+
+
+    }
+    .sidebar-nav {
+        -webkit-flex: 1 1 auto !important;
+        -ms-flex: 1 1 auto !important;
+        flex: 1 1 auto !important;
+        -webkit-flex-basis: auto !important;
+        -ms-flex-preferred-size: auto !important;
+        flex-basis: auto !important;
+        margin-bottom: auto;
+        background: $sidebar-dark;
+        height:100%;
+        overflow: hidden;
+
+        ul.metismenu {
+            background: transparent;
+
+            li {
+                a {
+                    border: none !important;
+                    padding: 0.9rem 1.6rem;
+                    color: $sidebar-text;
+                    display: flex;
+
+                    i {
+                        margin-right: 10px;
+                        color:lighten($sidebar-dark, 15%);
+                        width:20px;
+                    }
+                    &:hover,
+                    &:focus {
+                        background: #1f212d;
+                        color: $white;
+                        transition: all 0.3s ease-out;
+                    }
+                    .nav-title {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .nav-label {
+                        position:absolute;
+                        top:14px;
+                        right:40px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    &.has-arrow {
+                        &:after {
+                        transform: rotate(135deg) translateY(-50%);
+                        -webkit-transform: rotate(135deg) translateY(-50%);
+                        font-size:12px;
+                                color:lighten($sidebar-dark, 30%);
+                                right:1.5rem;
+                    }
+                    }
+                }
+
+                &.active {
+                    a {
+                        color:$white;
+                        i {
+                            color:$white;
+                        }
+                    }
+                    ul{
+                        position: relative;
+                        li{
+                            a{
+                                background: transparent !important;
+                                color: $sidebar-text;
+                                &:hover,
+                                &:focus {
+                                    color:$white !important;
+                                }
+                            }
+                            &.active {
+                                a {
+                                    color:$white !important;
+                                    &:hover,
+                                    &:focus {
+                                        color:$white !important;
+                                    }
+                                    &:before {
+                                        width: 14px;
+                                        height: 2px;
+                                        position: absolute;
+                                        content: '';
+                                        left: 32px;
+                                        background: lighten($sidebar-dark, 5%);
+                                        top: 18px;
+                                    }
+                                    &.has-arrow {
+                                        color:$white !important;
+                                    }
+                                }
+                                ul {
+                                    li {
+                                        a {
+                                            padding-left:4.8rem;
+                                            color:$sidebar-text !important;
+                                        }
+                                        &.active {
+                                            a {
+                                                color:$white !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            width:2px;
+                            height: 100%;
+                            background: lighten($sidebar-dark, 5%);
+                            top:0;
+                            left:30px;
+                        }
+
+                    }
+                    .has-arrow {
+                        &:after {
+                                transform: rotate(225deg) translateY(-50%);
+                                -webkit-transform: rotate(225deg) translateY(-50%);
+
+                        }
+                    }
+                }
+                ul {
+                    background: $sidebar-dark;
+                    li {
+                        a {
+                            padding: 0.6rem 2rem;
+                            padding-left:3.78rem;
+
+                            &:hover,
+                            &:focus {
+                                background:none;
+                                color:$primary;
+                            }
+                        }
+
+                    }
+                }
+                &+li,
+                &:first-child {
+                    margin-top: 0;
+                }
+                &.nav-static-title {
+                    padding: 1rem 1.6rem 0.1rem 1.6rem;
+                    color:$white;
+                    font-size:$font-xs;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                    font-weight: $font-semibold;
+                    color:lighten($sidebar-dark, 15%);
+                }
+                .has-arrow[aria-expanded=true] {
+                    &:after {
+                        transform: rotate(225deg) translateY(-50%);
+                        -webkit-transform: rotate(225deg) translateY(-50%);
+                    }
+                }
+            }
+        }
+        .sidebar-banner {
+            .btn { 
+                @include hex-rgba($light-gray, 0.3);
+                color: $white !important; 
+                padding: 0.3rem 0.8rem;
+
+                &:hover, &:focus {
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    
+}
+
+.light-sidebar {
+    .app-navbar  {
+        .sidebar-nav {
+            background: $white;
+            ul.metismenu {
+                li {
+                    a {
+                        color:  darken( $sidebar-text, 12% );
+                        &:hover {
+                            background: $light-gray;
+                            color:$primary;
+                        }
+                        &:focus {
+                            background: transparent; color: $sidebar-text; 
+                        }
+                    }
+                    ul {
+                        background: lighten( $dark, 76% );
+                    }
+                    &.active {
+                        a {
+                            background: $white;
+                            color:$primary;
+                            &:hover {
+                                color:$primary !important;
+                            }
+                            &:focus {
+                                color:$primary !important;
+                            }
+                            &:active {
+                                color:$primary !important;
+                            }
+
+                            i {
+                                color: $primary;
+                            }
+                            &:hover {
+                                i {
+                                    color: $primary;
+                                }
+                            }
+                            &:focus {
+                                i {
+                                    color: $primary;
+                                }
+                            }
+                            &:visited {
+                                i {
+                                    color: $primary;
+                                }
+                            }
+                            &:active {
+                                i {
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        ul {
+                            &:before {
+                                background: lighten( $dark, 72% );
+                            }
+                            li {
+                                a {
+                                    color:$sidebar-text;
+                                }
+                                &.active {
+                                    
+                                    ul {
+                                        li {
+                                            a {
+                                                color:$sidebar-text !important;
+                                            }
+                                            &.active {
+                                                a {
+                                                    color:$primary !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    a {
+                                        color:$primary !important;
+                                        &:before {
+                                            background: lighten( $dark, 72% ); 
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .top-bar {
+        .navbar {
+            .navbar-header {
+                background: $white;
+            }
+        }
+        .navigation {
+            border-left:1px solid $border-color;
+        }
+    }
+}
+
+
+.sidebar-fixed {
+    .app-navbar  {
+        position:fixed;
+        left:0;
+        top:60px;
+        height:calc(100vh-60px);
+    }
+}
+
+// Sidebar Mini
+
+.sidebar-mini {
+    .app-navbar {
+        width: $sidebar-mini;
+        z-index:1052;
+        @include mobile-landscape {
+            position: fixed;
+            left: -$sidebar-mini;
+            height:100%;
+        }
+        @include mobile-portrait-sm {
+            position: fixed;
+            left: -$sidebar-mini;
+            height:100%;
+        }
+        @include mobile-portrait-xs {
+            position: fixed;
+            left: -$sidebar-mini;
+            height:100%;
+        }
+        &:hover {
+            width: 240px;
+            .metismenu {
+                li.nav-static-title {
+                    display: block;
+                    a{
+                        &:after {
+                            display: block;
+                        }
+                    }
+                }
+                li {
+                    a{
+                        .nav-title, .nav-label {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .collapse.in{
+                    display: block;
+                }
+            }
+        }
+        ul.metismenu {
+            li{
+                a{
+                    .nav-title, .nav-label {
+                        opacity: 0;
+                        transition: all 0.7s;
+                        -webkit-transition: all 0.7s;
+                        -moz-transition: all 0.7s;
+                    }
+                    &:after {
+                        display: none;
+                    }
+                }
+                &.nav-static-title{
+                    display: none;
+                }
+                + li {
+                    width: 240px;
+                }
+            }
+            .collapse.in {
+                display: none;
+            }
+            .sidebar-banner {
+                display: none !important;
+            }
+
+        }
+    }
+    .footer{
+        width: calc(100% - 60px);
+    }
+} 
+.sidebar-nav {
+    .metismenu {
+        li {
+            &:last-child {
+                   margin-bottom:0px;
+            }
+        }
+    }
+}
+.sidebar-toggled {
+    .app-navbar {
+        left:0;
+    }
+}

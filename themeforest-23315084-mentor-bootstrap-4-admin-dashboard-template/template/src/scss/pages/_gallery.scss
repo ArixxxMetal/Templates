@@ -1,0 +1,120 @@
+.portfolio-item{
+    overflow: hidden;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    position: relative;
+    &:before{
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-size: 115%;
+        -webkit-transition: all 0.7s cubic-bezier(.68,.11,.13,.98);
+        -moz-transition: all 0.7s cubic-bezier(.68,.11,.13,.98);
+        transition: all 0.7s cubic-bezier(.68,.11,.13,.98);
+    }
+    img {
+        width: 100%;
+        -webkit-transition: transform 0.35s;
+        -o-transition: transform 0.35s;
+        -ms-transition: transform 0.35s;
+        -moz-transition: transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .portfolio-overlay{
+        width: 100%;
+        background: #8E54E9 !important;
+        padding: 10px 0px;
+        position: absolute;
+        bottom: -80px;
+        display: block;
+        margin-top: 0;
+        float: left;
+        z-index: 9;
+        text-align: center;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        h4 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        a{
+            &:hover {
+                color: $white;
+            }
+        }
+        span{
+            font-weight: 400;
+            font-size: $font-base;
+            a{
+                color: $white;
+                &:hover{
+                    color: #323232;
+                }
+            }
+        }
+    }
+    a{
+        &.popup{
+            position: absolute;
+            right: 20px;
+            top: -20px;
+            color: #fff;
+            z-index: 9;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            color: #626262;
+            border-radius: 50%;
+            margin-right: 10px;
+            padding-left: 0px;
+            text-align: center;
+            line-height: 40px;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out; 
+             &:hover {
+                background: $primary;
+                color: $white;
+            }  
+        }
+    }
+    &:hover{
+        img {
+            -webkit-transform: scale(1.20);
+            -moz-transform: scale(1.20);
+            -ms-transform: scale(1.20);
+            -o-transform: scale(1.20);
+            transform: scale(1.20);
+        }
+        a.popup {
+            opacity: 1;
+            top: 20px;
+        }
+        .portfolio-overlay{
+            bottom:0;
+        }
+
+    }
+}
+
+
+

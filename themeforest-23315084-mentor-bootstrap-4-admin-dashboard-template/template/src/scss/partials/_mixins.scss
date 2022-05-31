@@ -1,0 +1,103 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+@mixin button-shadow($top, $left, $bottom, $blur, $hexcolor, $opacity) {
+  -webkit-box-shadow: $top $left $bottom $blur  rgba($hexcolor, $opacity);
+  -moz-box-shadow: $top $left $bottom $blur rgba($hexcolor, $opacity);
+  box-shadow: $top $left $bottom $blur rgba($hexcolor, $opacity);
+}
+@mixin hex-rgba($hexcolor, $opacity) {
+    background: $hexcolor; /* The Fallback */
+    background: rgba($hexcolor, $opacity) !important;
+}
+@mixin multi-hex-rgba($hexcolor1, $hexcolor1, $opacity) {
+    background: $hexcolor1; /* The Fallback */
+    background: rgba($hexcolor1,$hexcolor2, $opacity) !important;
+}
+@mixin linear-gradient($left, $right){
+    background: $left; /* Old browsers */
+    background: -moz-linear-gradient(left,  $left 0%, $right 100%)  !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left, right, color-stop(0%,$left), color-stop(100%,$right))  !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, $left 0%,$right 100%)  !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, $left 0%,$right 100%)  !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, $left 0%,$right 100%)  !important; /* IE10+ */
+    background: linear-gradient(to right, $left 0%,$right 100%)  !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 )  !important; /* IE6-9 */
+}
+@mixin linear-gradient-opacity($left, $right, $opacity) {
+    background: -moz-linear-gradient(top, rgba($left, $opacity) 0%, rgba($right, $opacity) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba($left, $opacity) 0%, rgba($right, $opacity) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba($left, $opacity) 0%, rgba($right, $opacity) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba($left, $opacity)', endColorstr='rgba($left, $opacity)',GradientType=0 ); /* IE6-9 */
+}
+@mixin desktop-lg {
+  @media (min-width: #{$desktop-lg}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) and (max-width: #{$desktop-lg - 1px}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media  screen and (min-width: #{$laptop}) and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+@mixin tablet-landscape {
+  @media  screen and (min-width: #{$tablet-landscape}) and (max-width: #{$laptop - 1px}) {
+    @content;
+  }
+}
+@mixin tablet-portrait {
+  @media  screen and (min-width: #{$tablet-portrait}) and (max-width: #{$tablet-landscape - 1px}) {
+    @content;
+  }
+}
+@mixin mobile-landscape {
+  @media  screen and (min-width: #{$mobile-landscape}) and (max-width: #{$tablet-portrait - 1px}) {
+    @content;
+  }
+}
+@mixin mobile-portrait-lg {
+  @media  screen and (min-width: #{$mobile-portrait}) and (max-width: #{$mobile-landscape - 1px}) {
+    @content;
+  }
+}
+@mixin mobile-portrait-sm {
+  @media  screen and (min-width: #{$mobile-portrait-sm}) and (max-width: #{$mobile-landscape - 1px}) {
+    @content;
+  }
+}
+@mixin mobile-portrait-xs {
+  @media  screen and (max-width: #{$mobile-portrait-sm}) {
+    @content;
+  }
+}
+
+@mixin transition($what: all, $time: 0.3s, $how: ease) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+
+@mixin padding($direction, $value) {
+  padding-#{$direction}: $value;
+}
+@mixin margin($direction, $value) {
+  margin-#{$direction}: $value;
+}
+@mixin border($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color !important;
+}

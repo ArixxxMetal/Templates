@@ -1,0 +1,109 @@
+.widget-social-box1, .widget-social-box2, .widget-social-box3, .widget-social-box4, .widget-social-box5, .widget-social-box6, .widget-social-box7, .widget-social-box8, .widget-social-box9, .widget-social-box10, .widget-social-box11, .widget-social-box12, .widget-social-box13, .widget-social-box14, .widget-social-box15 {
+    overflow:hidden;
+}
+.widget-social{
+    .widget-social-box1{
+        ul{
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+        }
+    }
+    .widget-social{
+        &-box1, &-box3, &-box4, &-box5, &-box9 {
+            ul{
+                li{
+                    border-right: 1px solid #dee2e6;
+                    &:last-child{
+                        border-right: 0px solid #dee2e6;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+        &-box3, &-box7, &-box9, &-box11, &-box12, &-box15 {
+            .widget-social-contant{
+                @include linear-gradient($primary, $primary2);
+
+                h4, h5{
+                    color: $white;
+                }
+            }
+        }
+        &-box7{
+            .widget-social-contant{
+                a, p {
+                    color: $white;
+                }
+                p{
+                    border-color: $white;
+                }
+            }
+        }
+        &-box12{
+            .widget-social-contant{
+                p {
+                    color: $white;
+                }
+            }
+        }
+        &-box6, &-box7, &-box8 {
+            ul{
+                li{
+                    padding:0 5px;
+                }
+            }
+        }
+        &-box10, &-box12 {
+            .nav {
+                padding: 0.5rem;
+            }    
+        }
+    }
+    .widget-social-box2{
+        .card-body {
+            ul{
+                li{
+                    a{
+                        font-size:14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+           
+        }
+    }
+    .widget-social-box4{
+        ul{
+            border-top: 1px solid #dee2e6;
+        }
+    }
+    .widget-social-box9{
+        .bg-img{
+            margin-top:-30px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+    .widget-social-box11{
+        ul{
+            li{
+               padding:10px 10px; 
+            }
+        }
+    }
+    .widget-social-box15{
+        .img-icon{
+            width:40px;
+            height:40px;
+            border-radius: 50px;
+            line-height:40px;
+            text-align:center;
+            i{
+                font-size:18px;
+            }
+        }
+    }
+
+}
+
+

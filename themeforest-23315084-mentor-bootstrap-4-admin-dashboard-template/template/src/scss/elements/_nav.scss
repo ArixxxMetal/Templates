@@ -1,0 +1,53 @@
+.nav {
+	.nav-item {
+		.nav-link {
+			&.active {
+				color:$primary;
+			}
+			&.disabled {
+				opacity: 0.5;
+			}
+		}
+	}
+	.nav-link {
+		&.active {
+			color:$primary;
+		}
+		&.disabled {
+			opacity: 0.5;
+		}
+	}
+}
+
+
+.nav-pills{
+	.nav-item {
+		.nav-link {
+		&.active{
+	    	color: $white;
+    		background-color:$primary;
+	    }
+	    &.disabled {
+		    color:$muted;
+		    opacity: 0.7;
+		}
+	}
+	}
+	.nav-link {
+	    margin-right:3px;
+	    &.active{
+	    	color: $white;
+    		background-color:$primary;
+	    }
+	    &.disabled {
+		    color:$muted;
+		    opacity: 0.7;
+		}
+	}
+	.show{
+		> .nav-link {
+			color: $white;
+    		background-color:$primary;
+		}
+	}
+}

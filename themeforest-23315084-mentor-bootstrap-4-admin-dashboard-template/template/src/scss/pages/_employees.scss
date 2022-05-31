@@ -1,0 +1,33 @@
+.employees-contant{
+	.employees-contant-inner{
+		span{
+		    margin-left:8px;
+		    font-size:13px;
+		    &:first-child{
+			    margin-left:0; 
+			}
+			@include mobile-portrait-sm {
+				margin-bottom: 8px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			@include mobile-portrait-xs {
+				margin-bottom: 8px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	h4{
+		.badge{
+		    background-color: #f7f7f7;
+		    color: #8E54E9;
+		}
+	}
+	.bg-img{
+		width: 70px;
+		height: 70px;
+	}
+}

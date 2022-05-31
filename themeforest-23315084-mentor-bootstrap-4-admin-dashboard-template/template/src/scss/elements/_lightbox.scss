@@ -1,0 +1,26 @@
+.mfp-bg {
+	z-index: 1052;
+}
+.mfp-wrap {
+	z-index: 1052;
+}
+.mfp-no-margins{
+	 img.mfp-img {
+	    padding: 0;
+	}
+	.mfp-figure{
+		&:after {
+		    top: 0;
+		    bottom: 0;
+		}
+	}
+	.mfp-container {
+	    padding: 0;
+	}
+}
+
+.mfp-arrow{
+	&:hover, &:focus {
+		outline:0;
+	}
+}

@@ -1,0 +1,48 @@
+.list-group-contant {
+    .list-group-item{
+        &.disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        &:hover {
+            background-color:lighten($light-gray, 2%); 
+        }
+        &.active {
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+    .list-group-1{
+        .list-group-item{
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        } 
+    }
+}
+.list-group-item{
+    &-primary{
+        background: $primary;
+    }
+    &-secondary{
+        background: $secondary;
+    }
+    &-success{
+        background: $success;
+    }
+    &-danger{
+        background: $danger;
+    }
+    &-warning{
+        background: $warning;
+    }
+    &-info{
+        background: $info;
+    }
+    &-light{
+        background: $light;
+    }
+    &-dark{
+        background: $dark;
+    }
+}
+
+

@@ -1,0 +1,73 @@
+.vmap {
+    height:420px;
+	width:100%;
+	@include mobile-landscape {
+		height:310px !important;
+	}
+	@include mobile-portrait-sm {
+		height:310px !important;
+	}
+	@include mobile-portrait-xs {
+		height:310px !important;
+	}
+}
+
+.jqvmap-zoomin, .jqvmap-zoomout{
+	padding:0;
+	line-height: 14px;
+	width:15px;
+	height:15px;
+}
+
+.jqvmap-region {
+	cursor: default !important;
+}
+
+.map-pin {
+	width: 64px;
+	height: 50px;
+	position: absolute;
+	top: -25px;
+	left: -32px;
+	background-size: 32px 32px;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: top center;
+	color: #888;
+	font-weight: 500;
+	font-size: 14px;
+
+	span {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		left: 0;
+	}
+
+}
+ 
+
+.red {
+background-image: url('../img/marker/red.png');
+}
+
+.blue {
+background-image: url('../img/marker/blue.png');
+}
+
+.purple {
+background-image: url('../img/marker/purple.png');
+}
+
+/* Setup basic CSS for Label */
+.jqvmap-pin {
+font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+cursor: default;
+}
+
+/* Reposition Labels that are not quite right ( labels are centered in shape, and sometimes need tweaking ) */
+
+#jqvmap1_fl_pin {
+margin-left: 5%;
+}

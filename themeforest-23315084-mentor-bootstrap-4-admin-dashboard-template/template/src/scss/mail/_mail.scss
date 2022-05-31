@@ -1,0 +1,91 @@
+.mail-sidebar{
+	border-right:1px solid #dee2e6;
+	height: 100%;
+	span{
+		span{
+			i{
+				font-size:16px;
+				width:30px;
+				display: block;
+				height:auto;
+			}
+		}
+	}
+	ul{
+		list-style: none;
+	
+		li{
+			&:hover{
+				i, p{
+					color: $primary !important;
+				}
+			}
+			a{
+				&:focus{
+					i, p {
+						color: $primary !important;
+					}
+				}
+			}
+		}
+	}
+	.mail-sidebar-title{
+		padding: 0.9rem 0 0.8rem 0;
+		border-bottom: 1px solid #dee2e6;
+	}
+}
+
+.mail-msg-item-titel{
+	display: flex;
+	align-items: center;
+}
+.mail-msg{
+	max-height: 747px;
+	overflow: hidden;
+	outline: none;
+	@include laptop {
+		max-height: 450px;
+	}
+	@include tablet-landscape {
+		max-height: 410px;
+	}
+	@include tablet-portrait {
+		max-height: 435px;
+	}
+}
+
+.mail-msg-item{
+	border-bottom: 1px solid #dee2e6;
+	padding: 1rem 1.5rem;
+	&:hover{
+		background-color: #f7f7f7;
+	}
+	&:last-child{
+		border-bottom: 0;
+	}
+	.bg-img{
+		width: 45px;
+		height: 45px;
+	}
+}
+
+.mail-search{
+	.form-group {
+		position: relative;
+		i {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			font-size: 18px;
+		}
+		.form-control{
+			height:41px;
+		}
+	}
+}
+
+.mail-contant .mail-f{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}

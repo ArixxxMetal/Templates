@@ -1,0 +1,16 @@
+.dropzone {
+    border:2px dashed $border-color;
+    .dz-message {
+        color:$muted;
+        font-size:$font-lg;
+        margin:5em;
+
+        @include mobile-portrait-sm {
+            margin:3em 0;
+        }
+        @include mobile-portrait-xs {
+            margin:3em 0;
+        }
+    }
+
+}

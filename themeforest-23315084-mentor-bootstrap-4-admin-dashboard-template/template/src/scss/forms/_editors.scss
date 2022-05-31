@@ -1,0 +1,31 @@
+@font-face{
+	font-family:"summernote";
+	font-style:normal;
+	font-weight:normal;
+	src:url("../fonts/summernote.eot?4c7e83314b68cfa6a0d18a8b4690044b");
+	src:url("../fonts/summernote.eot?4c7e83314b68cfa6a0d18a8b4690044b#iefix") format("embedded-opentype"),
+	url("../fonts/summernote.woff?4c7e83314b68cfa6a0d18a8b4690044b") format("woff"),
+	url("../fonts/summernote.ttf?4c7e83314b68cfa6a0d18a8b4690044b") format("truetype")
+}
+
+
+.note-editor{
+	&.note-frame {
+	    box-shadow: none;
+	    border-color:$border-color;
+	    margin-bottom:0;
+	}
+}
+.ql-toolbar.ql-snow, .ql-container.ql-snow {
+    border-color:$border-color;
+}
+
+.note-toolbar-wrapper{ 
+	.note-toolbar{ 
+		.btn-group{ 
+			.btn{
+				padding:.25rem .5rem !important;
+			}
+		}
+	}    
+}

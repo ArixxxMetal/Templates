@@ -1,0 +1,491 @@
+input[readonly] {
+    pointer-events: none;
+  }
+.form-check {
+    position: relative;
+    padding: 19px 0 15px 40px;
+    text-align: left;
+    overflow: hidden;
+  
+    label {
+      cursor: pointer;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        border-radius: 5px;
+      }
+      &:before {
+        left: 3px;
+        width: 22px;
+        height: 22px;
+        margin: -10px 0 0;
+        background: $light-gray;
+      }
+      &:after {
+        left: 8px;
+        width: 13px;
+        height: 13px;
+        margin: -6px 0 0;
+        opacity: 0;
+        background: $primary;
+        transform: translate3d(0px, 0, 0) scale(0.5);
+        transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+      }
+    }
+  
+    input[type="radio"],
+    input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      left: -9999px;
+      visibility: hidden;
+  
+      &:checked + label {
+        &:after {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  .form-check {
+    label {
+      &:before,
+      &:after {
+        border-radius: 0;
+      }
+    }
+  }
+  
+  .form-check {
+    label {
+      &:before {
+        border-radius: 2px;
+      }
+      &:after {
+        border-radius: 2px;
+      }
+    }
+  }
+  
+  .form-check {
+      input[type="radio"] + label{
+  
+          &:before {
+            border-radius: 10px;
+          }
+          &:after {
+            border-radius: 10px;
+            margin:-5px 0 0;
+          }
+      }
+  }
+  
+  .form-check input[type="radio"] + label:before {
+      border-radius: 50px;
+  }
+  
+.form-control {
+    height: 40px;
+    border: 1px solid $border-color;
+    color: $muted;
+
+    &:focus {
+        border-color: $primary;
+        box-shadow: none;
+    }
+
+    &-lg {
+        height: 50px;
+    }
+
+    &-sm {
+        height: 30px;
+    }
+
+    &-plaintext {
+        color: $muted;
+    }
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 40px;
+}
+
+select.form-control-lg:not([size]):not([multiple]) {
+    height: 50px;
+}
+
+select.form-control-sm:not([size]):not([multiple]) {
+    height: 30px;
+}
+select{
+    &.form-control[multiple], &.form-control[size]{
+       height: auto; 
+    }
+}
+
+label,
+legend {
+    font-weight: $font-medium;
+    color: $muted;
+}
+
+.custom-select.is-valid, .form-control.is-valid{
+    border-color: $success;
+    box-shadow: none; 
+    &:focus{
+        border-color: $success;
+        box-shadow: none;
+    } 
+}
+.was-validated{
+    .custom-select, .form-control{
+        &:valid{
+            border-color: $success;
+            box-shadow: none; 
+            &:focus{
+                border-color: $success;
+                box-shadow: none;
+            }   
+        }
+    }
+}
+
+.custom-select.is-invalid, .form-control.is-invalid{
+    border-color: $danger;
+    box-shadow: none;
+    &:focus{
+        border-color: $danger;
+        box-shadow: none; 
+    }
+}
+
+.was-validated{
+    .custom-select, .form-control{
+        &:invalid{
+            border-color: $danger;
+            box-shadow: none;
+            &:focus {
+                border-color: $danger;
+                box-shadow: none;
+            }  
+        }
+    }
+}
+
+.custom-control-input.is-invalid {
+    ~ .custom-control-label {
+        &::before{
+           @include hex-rgba($danger, 0.5); 
+        }
+    }
+}
+.was-validated{
+    .custom-control-input:invalid{
+        ~ .custom-control-label{
+            &::before{
+               @include hex-rgba($danger, 0.5); 
+            }
+        }
+    }
+}
+.custom-control-input.is-valid{
+    ~ .custom-control-label{
+        &::before {
+            @include hex-rgba($success, 0.5);
+        }
+    }
+}
+.was-validated{
+    .custom-control-input:valid{
+        ~ .custom-control-label{
+            &::before{
+               @include hex-rgba($success, 0.5); 
+            }
+        }
+    }
+}
+
+.custom-control-input.is-invalid{
+    ~ .custom-control-label{
+        color: $danger;
+    }
+}
+.was-validated{
+    .custom-control-input:invalid{
+        ~ .custom-control-label {
+            color: $danger;
+        }
+    }
+}
+
+.valid-feedback {
+    color: $success;
+}
+
+.invalid-feedback {
+    color: $danger;
+}
+
+.valid-tooltip {
+    @include hex-rgba($success, 0.8);
+}
+
+.invalid-tooltip {
+    @include hex-rgba($danger, 0.8);
+}
+
+.form-check-input.is-valid{
+    ~ .form-check-label{
+        color: $success;
+    }
+}
+.was-validated{
+    .form-check-input:valid{
+        ~ .form-check-label {
+            color: $success;
+        }
+    }
+}
+.form-check-input.is-invalid{
+    ~ .form-check-label{
+        color: $danger;
+    }
+}
+.was-validated{
+    .form-check-input:invalid{
+        ~ .form-check-label {
+            color: $danger;
+        }
+    }
+}
+
+
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/********************
+validation-form
+********************/
+#signupForm, #signupForm1 {
+    .error{
+        color: $danger;
+        font-size:1rem !important;
+        font-style: italic;
+        padding: .4em .5em .3em;
+    }
+}
+#signupForm3{
+    .error.label{
+        color: $danger;
+        font-size:1rem !important;
+        font-style: italic;
+        padding: .4em .5em .3em;
+    }
+}
+
+#signupForm1 {
+    span.fa-times {
+        color: $danger;
+        font-size:1rem !important;
+        font-style: italic;
+        padding: .4em .5em .3em;
+    }
+}
+#signupForm1{
+     span.fa-check {
+        color: $success;
+    }
+}
+
+
+/********************
+selects-form
+********************/
+.selects-contant {
+    .select2-container{
+        .select2-selection--single{
+            height: 40px;
+        }
+        &--default{
+            .select2-selection--single{
+                .select2-selection__rendered {
+                    line-height: 38px;
+                }
+                .select2-selection__arrow {
+                    height: 40px;
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+    .Multi-sel{
+        .select2-container--default{
+            .select2-selection--multiple{
+                .select2-selection__choice, .select2-selection__choice__remove{
+                    background-color: $primary;
+                    border: 1px solid $primary;
+                    color: $white;
+                    padding: 1px 10px 1px 4px;
+                } 
+                .select2-selection__choice__remove{
+                    &:hover {
+                        color: $danger;
+                    }
+                }
+
+            }
+            &.select2-container--focus{
+                .select2-selection--multiple {
+                    border: solid $border-color 1px;
+                }
+            }
+        }
+    }
+}
+
+.selects-contant-boots{
+    .bootstrap-tagsinput {
+        width: 100%;
+        height: 40px;
+        padding: 7px 6px;
+        .label {
+            padding: .4em .7em;
+            &-info {
+                background-color: $primary;
+            } 
+        }
+    }
+}
+
+
+
+/*datepicker*/
+.input-group-addon {
+    padding: 8px 14px;
+    background: $primary;
+    border: 1px solid $primary;
+    color: $white;
+}
+
+.datepicker {
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+    width: 270px;
+    font-size: 14px;
+    table {
+        width: 100%;
+        tr{
+            td{
+                width: 30px;
+                height: 35px;  
+                &.today {
+                    @include linear-gradient($primary, $primary2);
+                    color: $white;
+                    &:hover {
+                        @include linear-gradient($primary, $primary2);
+                        color: $white;
+                    } 
+                    &.disabled {
+                        @include linear-gradient($primary, $primary2);
+                        color: $white;
+                        &:hover {
+                            @include linear-gradient($primary, $primary2);
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.datepicker-inline {
+    width: 270px;
+}
+
+.datetimepicker table {
+    width: 100%;
+}
+
+   
+
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active[disabled],
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active.disabled:hover[disabled] {
+    @include linear-gradient($primary, $primary2);
+    color: $white;
+}
+
+.datepicker {
+    @include mobile-portrait-sm {
+        width:230px;
+    }
+    @include mobile-portrait-xs {
+        width:230px;
+    }
+}
+.datepicker-inline {
+    @include mobile-portrait-sm {
+        width:100%;
+    }
+    @include mobile-portrait-xs {
+        width:100%;
+    }
+}
+
+.datepicker-orient-right {
+    @include mobile-portrait-sm {
+        left:10px !important;
+    }
+    @include mobile-portrait-xs {
+        left:10px !important;
+    }
+}
+
+.active-task {
+    .form-check{
+        label{
+            &:before, &:after{
+                top: 3px; 
+                margin: 0;
+            }
+        }
+    }
+}

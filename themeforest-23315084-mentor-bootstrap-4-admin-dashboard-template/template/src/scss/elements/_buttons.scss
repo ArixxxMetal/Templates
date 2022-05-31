@@ -1,0 +1,1493 @@
+.btn{
+    font-weight: 500;
+}
+.btn {
+	font-size:$font-s;
+	padding:0.6rem 1.4rem;
+	&-primary {
+		background-color:$primary;
+		color:$white;
+		border-color:$primary;
+		&:hover {
+			background-color:darken($primary, 8%);
+			border-color:darken($primary, 8%);
+		}
+		&:focus {
+			background-color:darken($primary, 8%);
+			border-color:darken($primary, 8%);
+			box-shadow: none;
+			color:$white;
+		}
+		&:active {
+			background-color:darken($primary, 8%);
+			border-color:darken($primary, 8%);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($primary, 8%);
+			border-color:darken($primary, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color:darken($primary, 8%);
+			border-color:darken($primary, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active {
+			background-color:darken($primary, 8%);
+			border-color:darken($primary, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($primary, 8%);
+			border-color:darken($primary, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active:focus {
+			background-color:darken($primary, 8%);
+			border-color:darken($primary, 8%);
+			box-shadow: none;
+		}
+
+	}
+	&-secondary {
+		background-color:$secondary;
+		color:$white;
+		border-color:$secondary;
+		&:hover {
+			background-color:darken($secondary, 8%);
+			border-color:darken($secondary, 8%);
+		}
+		&:focus {
+			background-color:darken($secondary, 8%);
+			border-color:darken($secondary, 8%);
+			box-shadow: none;
+			color:$white;
+		}
+		&:active {
+			background-color:darken($secondary, 8%);
+			border-color:darken($secondary, 8%);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($secondary, 8%);
+			border-color:darken($secondary, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color:darken($secondary, 8%);
+			border-color:darken($secondary, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active {
+			background-color:darken($secondary, 8%);
+			border-color:darken($secondary, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($secondary, 8%);
+			border-color:darken($secondary, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active:focus {
+			background-color:darken($secondary, 8%);
+			border-color:darken($secondary, 8%);
+			box-shadow: none;
+		}
+	}
+	&-info {
+		background-color:$info;
+		color:$white;
+		border-color:$info;
+		&:hover {
+			background-color:darken($info, 8%);
+			border-color:darken($info, 8%);
+		}
+		&:focus {
+			background-color:darken($info, 8%);
+			border-color:darken($info, 8%);
+			box-shadow: none;
+			color:$white;
+		}
+		&:active {
+			background-color:darken($info, 8%);
+			border-color:darken($info, 8%);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($info, 8%);
+			border-color:darken($info, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color:darken($info, 8%);
+			border-color:darken($info, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active {
+			background-color:darken($info, 8%);
+			border-color:darken($info, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($info, 8%);
+			border-color:darken($info, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active:focus {
+			background-color:darken($info, 8%);
+			border-color:darken($info, 8%);
+			box-shadow: none;
+		}
+	}
+	&-warning {
+		background-color:$warning;
+		color:$white;
+		border-color:$warning;
+		&:hover {
+			background-color:darken($warning, 8%);
+			border-color:darken($warning, 8%);
+			color:$white;
+		}
+		&:focus {
+			background-color:darken($warning, 8%);
+			border-color:darken($warning, 8%);
+			box-shadow: none;
+			color:$white;
+		}
+		&:active {
+			background-color:darken($warning, 8%);
+			border-color:darken($warning, 8%);
+			color:$white;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($warning, 8%);
+			border-color:darken($warning, 8%);
+			color:$white;
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color:darken($warning, 8%);
+			border-color:darken($warning, 8%);
+			color:$white;
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active {
+			background-color:darken($warning, 8%);
+			border-color:darken($warning, 8%);
+			color:$white;
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($warning, 8%);
+			border-color:darken($warning, 8%);
+			color:$white;
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active:focus {
+			background-color:darken($warning, 8%);
+			border-color:darken($warning, 8%);
+			box-shadow: none;
+		}
+	}
+	&-danger {
+		background-color:$danger;
+		color:$white;
+		border-color:$danger;
+		&:hover {
+			background-color:darken($danger, 8%);
+			border-color:darken($danger, 8%);
+		}
+		&:focus {
+			background-color:darken($danger, 8%);
+			border-color:darken($danger, 8%);
+			box-shadow: none;
+			color:$white;
+		}
+		&:active {
+			background-color:darken($danger, 8%);
+			border-color:darken($danger, 8%);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($danger, 8%);
+			border-color:darken($danger, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color:darken($danger, 8%);
+			border-color:darken($danger, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active {
+			background-color:darken($danger, 8%);
+			border-color:darken($danger, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($danger, 8%);
+			border-color:darken($danger, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active:focus {
+			background-color:darken($danger, 8%);
+			border-color:darken($danger, 8%);
+			box-shadow: none;
+		}
+	}
+	&-success {
+		background-color:$success;
+		color:$white;
+		border-color:$success;
+		&:hover {
+			background-color:darken($success, 8%);
+			border-color:darken($success, 8%);
+		}
+		&:focus {
+			background-color:darken($success, 8%);
+			border-color:darken($success, 8%);
+			box-shadow: none;
+			color:$white;
+		}
+		&:active {
+			background-color:darken($success, 8%);
+			border-color:darken($success, 8%);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($success, 8%);
+			border-color:darken($success, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color:darken($success, 8%);
+			border-color:darken($success, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active {
+			background-color:darken($success, 8%);
+			border-color:darken($success, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($success, 8%);
+			border-color:darken($success, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active:focus {
+			background-color:darken($success, 8%);
+			border-color:darken($success, 8%);
+			box-shadow: none;
+		}
+	}
+	&-light {
+		background-color:darken($light-gray, 5%);
+		border-color:darken($light-gray, 5%);
+		color:$dark-gray;
+		&:hover {
+			background-color:darken($light-gray, 20%);
+			border-color:darken($light-gray, 20%);
+		}
+		&:focus {
+			background-color:darken($light-gray, 20%);
+			border-color:darken($light-gray, 20%);
+			box-shadow: none;
+		}
+		&:active {
+			background-color:darken($light-gray, 20%);
+			border-color:darken($light-gray, 20%);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($light-gray, 20%);
+			border-color:darken($light-gray, 20%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color:darken($light-gray, 20%);
+			border-color:darken($light-gray, 20%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active {
+			background-color:darken($light-gray, 20%);
+			border-color:darken($light-gray, 20%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($light-gray, 20%);
+			border-color:darken($light-gray, 20%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active:focus {
+			background-color:darken($light-gray, 8%);
+			border-color:darken($light-gray, 8%);
+			box-shadow: none;
+		}
+	}
+	&-dark {
+		background-color:$dark-gray;
+		color:$white;
+		border-color:$dark-gray;
+		&:hover {
+			background-color:darken($dark-gray, 8%);
+			border-color:darken($dark-gray, 8%);
+		}
+		&:focus {
+			background-color:darken($dark-gray, 8%);
+			border-color:darken($dark-gray, 8%);
+			box-shadow: none;
+			color:$white;
+		}
+		&:active {
+			background-color:darken($dark-gray, 8%);
+			border-color:darken($dark-gray, 8%);
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($dark-gray, 8%);
+			border-color:darken($dark-gray, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active:focus {
+			background-color:darken($dark-gray, 8%);
+			border-color:darken($dark-gray, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active {
+			background-color:darken($dark-gray, 8%);
+			border-color:darken($dark-gray, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled):active {
+			background-color:darken($dark-gray, 8%);
+			border-color:darken($dark-gray, 8%);
+			box-shadow: none;
+		}
+		&:not(:disabled):not(.disabled).active:focus {
+			background-color:darken($dark-gray, 8%);
+			border-color:darken($dark-gray, 8%);
+			box-shadow: none;
+		}
+	}
+	&.btn-icon {
+		width:40px;
+		height:40px;
+		padding:0;
+		line-height:40px;
+	}
+	&.btn-square {
+		border-radius:0;
+	}
+	&.btn-round {
+		border-radius:50px;
+	}
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.btn{
+	&.btn-outline {
+		background:transparent;
+		&-primary {
+			color:$primary;
+			border-color:$primary;
+			&:hover {
+				background-color:darken($primary, 8%);
+				border-color:darken($primary, 8%);
+				color:$white;
+			}
+			&:focus {
+				background-color:darken($primary, 8%);
+				border-color:darken($primary, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:darken($primary, 8%);
+				border-color:darken($primary, 8%);
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled).active {
+				background-color:darken($primary, 8%);
+				border-color:darken($primary, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:darken($primary, 8%);
+				border-color:darken($primary, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:darken($primary, 8%);
+				border-color:darken($primary, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+
+		}
+		&-secondary {
+			color:$secondary;
+			border-color:$secondary;
+			&:hover {
+				background-color:darken($secondary, 8%);
+				border-color:darken($secondary, 8%);
+				color:$white;
+			}
+			&:focus {
+				background-color:darken($secondary, 8%);
+				border-color:darken($secondary, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:darken($secondary, 8%);
+				border-color:darken($secondary, 8%);
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled).active {
+				background-color:darken($secondary, 8%);
+				border-color:darken($secondary, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:darken($secondary, 8%);
+				border-color:darken($secondary, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:darken($secondary, 8%);
+				border-color:darken($secondary, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-info {
+			color:$info;
+			border-color:$info;
+			&:hover {
+				background-color:darken($info, 8%);
+				border-color:darken($info, 8%);
+				color:$white;
+			}
+			&:focus {
+				background-color:darken($info, 8%);
+				border-color:darken($info, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:darken($info, 8%);
+				border-color:darken($info, 8%);
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled).active {
+				background-color:darken($info, 8%);
+				border-color:darken($info, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:darken($info, 8%);
+				border-color:darken($info, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:darken($info, 8%);
+				border-color:darken($info, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-warning {
+			color:$warning;
+			border-color:$warning;
+			&:hover {
+				background-color:darken($warning, 8%);
+				border-color:darken($warning, 8%);
+				color:$white;
+			}
+			&:focus {
+				background-color:darken($warning, 8%);
+				border-color:darken($warning, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:darken($warning, 8%);
+				border-color:darken($warning, 8%);
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled).active {
+				background-color:darken($warning, 8%);
+				border-color:darken($warning, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:darken($warning, 8%);
+				border-color:darken($warning, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:darken($warning, 8%);
+				border-color:darken($warning, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-danger {
+			color:$danger;
+			border-color:$danger;
+			&:hover {
+				background-color:darken($danger, 8%);
+				border-color:darken($danger, 8%);
+				color:$white;
+			}
+			&:focus {
+				background-color:darken($danger, 8%);
+				border-color:darken($danger, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:darken($danger, 8%);
+				border-color:darken($danger, 8%);
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled).active {
+				background-color:darken($danger, 8%);
+				border-color:darken($danger, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:darken($danger, 8%);
+				border-color:darken($danger, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:darken($danger, 8%);
+				border-color:darken($danger, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-success {
+			color:$success;
+			border-color:$success;
+			&:hover {
+				background-color:darken($success, 8%);
+				border-color:darken($success, 8%);
+				color:$white;
+			}
+			&:focus {
+				background-color:darken($success, 8%);
+				border-color:darken($success, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:darken($success, 8%);
+				border-color:darken($success, 8%);
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled).active {
+				background-color:darken($success, 8%);
+				border-color:darken($success, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:darken($success, 8%);
+				border-color:darken($success, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:darken($success, 8%);
+				border-color:darken($success, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-light {
+			color:darken($light-gray, 20%);
+			border-color:darken($light-gray, 20%);
+			&:hover {
+				background-color:darken($light-gray, 20%);
+				border-color:darken($light-gray, 20%);
+				color:$dark-gray;
+			}
+			&:focus {
+				background-color:darken($light-gray, 20%);
+				border-color:darken($light-gray, 20%);
+				box-shadow:none;
+				color:$dark-gray;
+			}
+			&:active {
+				background-color:darken($light-gray, 20%);
+				border-color:darken($light-gray, 20%);
+				color:$dark-gray;
+			}
+			&:not(:disabled):not(.disabled).active {
+				background-color:darken($light-gray, 20%);
+				border-color:darken($light-gray, 20%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:darken($light-gray, 20%);
+				border-color:darken($light-gray, 20%);
+				box-shadow:none;
+				color:$dark-gray;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:darken($light-gray, 20%);
+				border-color:darken($light-gray, 20%);
+				box-shadow:none;
+				color:$dark-gray;
+			}
+		}
+		&-dark {
+			color:$dark-gray;
+			border-color:$dark-gray;
+			&:hover {
+				background-color:darken($dark-gray, 8%);
+				border-color:darken($dark-gray, 8%);
+				color:$white;
+			}
+			&:focus {
+				background-color:darken($dark-gray, 8%);
+				border-color:darken($dark-gray, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:darken($dark-gray, 8%);
+				border-color:darken($dark-gray, 8%);
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled).active {
+				background-color:darken($dark-gray, 8%);
+				border-color:darken($dark-gray, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:darken($dark-gray, 8%);
+				border-color:darken($dark-gray, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:darken($dark-gray, 8%);
+				border-color:darken($dark-gray, 8%);
+				box-shadow:none;
+				color:$white;
+			}
+		}
+	}
+}
+.btn{
+	&.btn-inverse {
+		border-color:transparent;
+		&-primary {
+			@include hex-rgba($primary, 0.1);
+			color:$primary;
+			&:hover {
+				background-color:$primary !important;
+				border-color:$primary;
+				color:$white;
+			}
+			&:focus {
+				background-color:$primary !important;
+				border-color:$primary;
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:$primary !important;
+				border-color:$primary;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:$primary !important;
+				border-color:$primary;
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:$primary !important;
+				border-color:$primary;
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-secondary {
+			@include hex-rgba($secondary, 0.1);
+			color:$secondary;
+			&:hover {
+				background-color:$secondary !important;
+				border-color:$secondary;
+				color:$white;
+			}
+			&:focus {
+				background-color:$secondary !important;
+				border-color:$secondary;
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:$secondary !important;
+				border-color:$secondary;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:$secondary !important;
+				border-color:$secondary;
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:$secondary !important;
+				border-color:$secondary;
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-info {
+			@include hex-rgba($info, 0.1);
+			color:$info;
+			&:hover {
+				background-color:$info !important;
+				border-color:$info;
+				color:$white;
+			}
+			&:focus {
+				background-color:$info !important;
+				border-color:$info;
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:$info !important;
+				border-color:$info;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:$info !important;
+				border-color:$info;
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:$info !important;
+				border-color:$info;
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-warning {
+			@include hex-rgba($warning, 0.1);
+			color:$warning;
+			&:hover {
+				background-color:$warning !important;
+				border-color:$warning;
+				color:$white;
+			}
+			&:focus {
+				background-color:$warning !important;
+				border-color:$warning;
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:$warning !important;
+				border-color:$warning;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:$warning !important;
+				border-color:$warning;
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:$warning !important;
+				border-color:$warning;
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-danger {
+			@include hex-rgba($danger, 0.1);
+			color:$danger;
+			&:hover {
+				background-color:$danger !important;
+				border-color:$danger;
+				color:$white;
+			}
+			&:focus {
+				background-color:$danger !important;
+				border-color:$danger;
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:$danger !important;
+				border-color:$danger;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:$danger !important;
+				border-color:$danger;
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:$danger !important;
+				border-color:$danger;
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-success {
+			@include hex-rgba($success, 0.1);
+			color:$success;
+			&:hover {
+				background-color:$success !important;
+				border-color:$success;
+				color:$white;
+			}
+			&:focus {
+				background-color:$success !important;
+				border-color:$success;
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:$success !important;
+				border-color:$success;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:$success !important;
+				border-color:$success;
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:$success !important;
+				border-color:$success;
+				box-shadow:none;
+				color:$white;
+			}
+		}
+		&-light {
+			@include hex-rgba($light-gray, 0.7);
+			color:$dark-gray;
+			&:hover {
+				background-color:$light-gray !important;
+				border-color:$light-gray;
+				color:$dark;
+			}
+			&:focus {
+				background-color:$light-gray !important;
+				border-color:$light-gray;
+				box-shadow:none;
+				color:$dark;
+			}
+			&:active {
+				background-color:$light-gray !important;
+				border-color:$light-gray;
+				color:$dark;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:$light-gray !important;
+				border-color:$light-gray;
+				box-shadow:none;
+				color:$dark;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:$light-gray !important;
+				border-color:$light-gray;
+				box-shadow:none;
+				color:$dark;
+			}
+		}
+		&-dark {
+			@include hex-rgba($dark-gray, 0.1);
+			color:$dark-gray;
+			&:hover {
+				background-color:$dark-gray !important;
+				border-color:$dark-gray;
+				color:$white;
+			}
+			&:focus {
+				background-color:$dark-gray !important;
+				border-color:$dark-gray;
+				box-shadow:none;
+				color:$white;
+			}
+			&:active {
+				background-color:$dark-gray !important;
+				border-color:$dark-gray;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active {
+				background-color:$dark-gray !important;
+				border-color:$dark-gray;
+				box-shadow:none;
+				color:$white;
+			}
+			&:not(:disabled):not(.disabled):active:focus {
+				background-color:$dark-gray !important;
+				border-color:$dark-gray;
+				box-shadow:none;
+				color:$white;
+			}
+		}
+	}
+}
+
+.show{
+	>.btn{
+		&-primary.dropdown-toggle {
+			background-color:$primary !important;
+			border-color:$primary;
+			box-shadow:none;
+			color:$white;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		&-secondary.dropdown-toggle {
+			background-color:$secondary !important;
+			border-color:$secondary;
+			box-shadow:none;
+			color:$white;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		&-info.dropdown-toggle {
+			background-color:$info !important;
+			border-color:$info;
+			box-shadow:none;
+			color:$white;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		&-warning.dropdown-toggle {
+			background-color:$warning !important;
+			border-color:$warning;
+			box-shadow:none;
+			color:$white;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		&-success.dropdown-toggle {
+			background-color:$success !important;
+			border-color:$success;
+			box-shadow:none;
+			color:$white;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		&-danger.dropdown-toggle {
+			background-color:$danger !important;
+			border-color:$danger;
+			box-shadow:none;
+			color:$white;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		&-light.dropdown-toggle {
+			background-color:$light-gray !important;
+			border-color:$light-gray;
+			box-shadow:none;
+			color:$dark-gray;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		&-dark-gray.dropdown-toggle {
+			background-color:$dark-gray !important;
+			border-color:$dark-gray;
+			box-shadow:none;
+			color:$white;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+}
+.show{
+	>.btn{
+		&-primary.dropdown-toggle, &-secondary.dropdown-toggle, &-info.dropdown-toggle, &-warning.dropdown-toggle, &-danger.dropdown-toggle, &-success.dropdown-toggle, &-light.dropdown-toggle, &-dark.dropdown-toggle {
+			box-shadow: none;
+		}
+	}
+
+}
+.button-list {
+	.btn {
+		margin: 0.5rem 0.5rem 0.5rem 0;
+	}
+}
+
+
+.btn-social{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding:0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.bg{
+	&-behance {
+		background-color : $behance;
+	}
+	&-whatsapp {
+		background-color : $whatsapp;
+	}
+	&-facebook-o {
+		border-color : $facebook;
+		background-color: transparent;
+		color: $facebook;
+		&:hover{
+			background-color:darken($facebook, 8%);
+			border-color:darken($facebook, 8%);
+			color:$white;
+		}
+	}
+	&-twitter-o {
+		border-color : $twitter;
+		background-color: transparent;
+		color: $twitter;
+		:hover{
+			background-color:darken($twitter, 8%);
+			border-color:darken($twitter, 8%);
+			color:$white;
+		}
+	}
+	&-linkedin-o {
+		border-color : $linkedin;
+		background-color: transparent;
+		color: $linkedin;
+		&:hover{
+			background-color:darken($linkedin, 8%);
+			border-color:darken($linkedin, 8%);
+			color:$white;
+		}
+	}
+	&-dribble-o {
+		border-color : $dribble;
+		background-color: transparent;
+		color: $dribble;
+		:hover{
+			background-color:darken($dribble, 8%);
+			border-color:darken($dribble, 8%);
+			color:$white;
+		}
+	}
+	&-googleplus-o {
+		border-color : $googleplus;
+		background-color: transparent;
+		color: $googleplus;
+		:hover{
+			background-color:darken($googleplus, 8%);
+			border-color:darken($googleplus, 8%);
+			color:$white;
+		}
+	}
+	&-instagram-o {
+		border-color : $instagram;
+		background-color: transparent;
+		color:$instagram;
+		:hover{
+			background-color:darken($instagram, 8%);
+			border-color:darken($instagram, 8%);
+			color:$white;
+		}
+	}
+	&-pinterest-o {
+		border-color : $pinterest;
+		background-color: transparent;
+		color:$pinterest;
+		:hover{
+			background-color:darken($pinterest, 8%);
+			border-color:darken($pinterest, 8%);
+			color:$white;
+		}
+	}
+	&-dropbox-o {
+		border-color : $dropbox;
+		background-color: transparent;
+		color: $dropbox;
+		:hover{
+			background-color:darken($dropbox, 8%);
+			border-color:darken($dropbox, 8%);
+			color:$white;
+		}
+	}
+	&-flickr-o{
+		border-color : $flickr;
+		background-color: transparent;
+		color:  $flickr;
+		:hover{
+			background-color:darken($flickr, 8%);
+			border-color:darken($flickr, 8%);
+			color:$white;
+		}
+	}
+	&-tumblr-o {
+		border-color : $tumblr;
+		background-color: transparent;
+		color: $tumblr;
+		:hover{
+			background-color:darken($tumblr, 8%);
+			border-color:darken($tumblr, 8%);
+			color:$white;
+		}
+	}
+	&-skype-o {
+		border-color : $skype;
+		background-color: transparent;
+		color:$skype;
+		:hover{
+			background-color:darken($skype, 8%);
+			border-color:darken($skype, 8%);
+			color:$white;
+		}
+	}
+	&-youtube-o {
+		border-color : $youtube;
+		background-color: transparent;
+		color: $youtube;
+		&:hover{
+			background-color:darken($youtube, 8%);
+			border-color:darken($youtube, 8%);
+			color:$white;
+		}
+	}
+	&-github-o {
+		border-color : $github;
+		background-color: transparent;
+		color: $github;
+		&:hover{
+			background-color:darken($github, 8%);
+			border-color:darken($github, 8%);
+			color:$white;
+		}
+	}
+	&-behance-o {
+		border-color : $behance;
+		background-color: transparent;
+		color: $behance;
+		:hover{
+			background-color:darken($behance, 8%);
+			border-color:darken($behance, 8%);
+			color:$white;
+}
+	}
+	&-whatsapp-o {
+		border-color : $whatsapp;
+		background-color: transparent;
+		color:  $whatsapp;
+		&:hover{
+			background-color:darken($whatsapp, 8%);
+			border-color:darken($whatsapp, 8%);
+			color:$white;
+		}
+	}
+	&-facebook-inverse {
+		background-color: rgba(59, 89, 152, 0.1);
+		color: $facebook;
+		&:hover{
+			background-color:darken($facebook, 8%);
+			border-color:darken($facebook, 8%);
+			color:$white;
+		}
+	}
+	&-twitter-inverse {
+		background-color: rgba(0, 172, 237,0.1) !important;
+		color: $twitter;
+		:hover{
+			background-color:darken($twitter, 8%) !important;
+			border-color:darken($twitter, 8%);
+			color:$white;
+		}
+	}
+	&-linkedin-inverse {
+		background-color: rgba(0, 119, 181, 0.1);
+		color: $linkedin;
+		&:hover{
+			background-color:darken($linkedin, 8%);
+			border-color:darken($linkedin, 8%);
+			color:$white;
+		}
+	}
+	&-googleplus-inverse {
+		background-color: rgba(211, 72, 54, 0.1);
+		color: $googleplus ;
+		&:hover{
+			background-color:darken($googleplus, 8%);
+			border-color:darken($googleplus, 8%);
+			color:$white;
+		}
+	}
+	&-instagram-inverse {
+		background-color: rgba(195, 42, 163, 0.1);
+		color:$instagram ;
+		&:hover{
+			background-color:darken($instagram, 8%);
+			border-color:darken($instagram, 8%);
+			color:$white;
+		}
+	}
+	&-pinterest-inverse {
+		background-color: rgba(201, 34, 40, 0.1);
+		color:$pinterest ;
+		&:hover{
+			background-color:darken($pinterest, 8%);
+			border-color:darken($pinterest, 8%);
+			color:$white;
+		}
+	}
+	&-dropbox-inverse {
+		background-color: rgba(61, 154, 232, 0.1);
+		color: $dropbox;
+		&:hover{
+			background-color:darken($dropbox, 8%);
+			border-color:darken($dropbox, 8%);
+			color:$white;
+		}
+	}
+	&-tumblr-inverse {
+		background-color: rgba(52, 82, 111, 0.1);
+		color: $tumblr;
+		&:hover{
+			background-color:darken($tumblr, 8%);
+			border-color:darken($tumblr, 8%);
+			color:$white;
+		}
+	}
+	&-skype-inverse {
+		background-color: rgba(18, 165, 244, 0.1);
+		color:$skype ;
+		&:hover{
+			background-color:darken($skype, 8%);
+			border-color:darken($skype, 8%);
+			color:$white;
+		}
+	}
+	&-youtube-inverse {
+		background-color: rgba(196, 48, 43, 0.1);
+		color: $youtube ;
+		&:hover{
+			background-color:darken($youtube, 8%);
+			border-color:darken($youtube, 8%);
+			color:$white;
+		}
+	}
+	&-github-inverse {
+		background-color: rgba(64, 120, 192, 0.1);
+		color: $github ;
+		&:hover{
+			background-color:darken($github, 8%);
+			border-color:darken($github, 8%);
+			color:$white;
+		}
+	}
+	&-behance-inverse {
+		background-color: rgba(5, 62, 255, 0.1);
+		color: $behance ;
+		&:hover{
+			background-color:darken($behance, 8%);
+			border-color:darken($behance, 8%);
+			color:$white;
+		}
+	}
+	&-whatsapp-inverse {
+		background-color: rgba(79, 206, 93, 0.1);
+		color:  $whatsapp;
+		&:hover{
+			background-color:darken($whatsapp, 8%);
+			border-color:darken($whatsapp, 8%);
+			color:$white;
+		}
+	}
+}
+
+.bg{
+	&-facebook{
+		&:hover{
+			background-color:darken($facebook, 8%)  !important;
+			border-color:darken($facebook, 8%);
+			color:$white;
+		}
+	}
+	&-twitter{
+		&:hover{
+			background-color:darken($twitter, 8%) !important;
+			border-color:darken($twitter, 8%);
+			color:$white;
+		}
+	}
+	&-linkedin{
+		&:hover{
+			background-color:darken($linkedin, 8%) !important;
+			border-color:darken($linkedin, 8%);
+			color:$white;
+		}
+	}
+	&-dribble{
+		&:hover{
+			background-color:darken($dribble, 8%) !important;
+			border-color:darken($dribble, 8%);
+			color:$white;
+		}
+	}
+	&-googleplus{
+		&:hover{
+			background-color:darken($googleplus, 8%) !important;
+			border-color:darken($googleplus, 8%);
+			color:$white;
+		}
+	}
+	&-instagram{
+		&:hover{
+			background-color:darken($instagram, 8%) !important;
+			border-color:darken($instagram, 8%);
+			color:$white;
+		}
+	}
+	&-pinterest{
+		&:hover{
+			background-color:darken($pinterest, 8%) !important;
+			border-color:darken($pinterest, 8%);
+			color:$white;
+		}
+	}
+	-dropbox{
+		&:hover{
+			background-color:darken($dropbox, 8%) !important;
+			border-color:darken($dropbox, 8%);
+			color:$white;
+		}
+	}
+	&-flickr{
+		&:hover{
+			background-color:darken($flickr, 8%) !important;
+			border-color:darken($flickr, 8%);
+			color:$white;
+		}
+	}
+	&-tumblr{
+		&:hover{
+			background-color:darken($tumblr, 8%) !important;
+			border-color:darken($tumblr, 8%);
+			color:$white;
+		}
+	}
+	&-skype{
+		&:hover{
+			background-color:darken($skype, 8%) !important;
+			border-color:darken($skype, 8%);
+			color:$white;
+		}
+	}
+	&-github{
+		&:hover{
+			background-color:darken($github, 8%) !important;
+			border-color:darken($github, 8%);
+			color:$white;
+		}
+	}
+	&-whatsapp{
+		&:hover{
+			background-color:darken($whatsapp, 8%) !important;
+			border-color:darken($whatsapp, 8%);
+			color:$white;
+		}
+	}
+}
+
+
+
+.btn-social-lg{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.btn-social-sm{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding:0;
+}
+.btn-social{
+	&.btn-social{
+		&-lg{
+			font-size: 2rem;
+		}
+		&-sm{
+			font-size: 1rem;
+		}
+	}
+}
+
+// button
+.btn{
+	&.btn{
+		&-xs { 
+			padding: 0.1rem 0.8rem; 
+			font-size: 12px; 
+		}
+		&-sm { 
+			padding: 0.4rem 0.9rem; 
+			font-size: 12px; 
+		}
+		&-xl { 
+			padding: 1rem 1.4rem;  
+		}
+	}
+	&.btn-icon{
+		&.btn{
+			&-xs { 
+				width: 24px; 
+				height: 24px; 
+				line-height: 24px; 
+				padding: 0; 
+				font-size: 10px; 
+			}
+			&-sm { 
+				width: 30px; 
+				height: 30px; 
+				line-height: 30px; 
+				padding: 0; 
+			}
+			&-xl { 
+				width: 50px; 
+				height: 50px; 
+				line-height: 50px; 
+				padding: 0; 
+			}
+		}
+	}
+}
+
+.btn-badge {
+	margin-bottom:3px;
+}

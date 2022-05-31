@@ -1,0 +1,77 @@
+.dating-contant{
+	.bg-img{
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+	}
+	.table{
+		td, th{
+			vertical-align: middle;		
+		}
+	}
+	table {
+		tr{
+			td{
+				&:nth-child(2){
+					display: flex;
+					align-items: center;
+
+					div{
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+	}
+	.img-icon{
+		i.f-30 {
+			line-height:63px;
+		}
+	}
+}
+
+.datting-upload-image  { 
+    padding: 0; 
+    .tab{
+        .nav{
+            padding: 10px 20px 30px; 
+            margin-bottom: 0; 
+            border-bottom: 1px solid $border-color;
+            &.nav-tabs{ 
+                li { 
+                    a { 
+                        padding: 4px 20px; 
+                    }
+                }
+            }
+        }
+    }
+    .upload-image{
+        padding: 30px 30px; 
+        border-right: 1px solid $border-color; 
+        & + .upload-image{
+            border-right: 0px solid $border-color;
+		}  
+		@include mobile-portrait-sm {
+			 padding: 20px; 
+		  }
+		  @include mobile-portrait-xs {
+			 padding: 20px; 
+		  } 
+    }
+}
+
+.site-visitor {
+	.col {
+		 @include mobile-portrait-sm {
+			flex-basis: auto;
+			border:0 !important;
+			margin-bottom: 10px;
+		   }
+		   @include mobile-portrait-xs {
+			flex-basis: auto;
+			border:0 !important;
+			margin-bottom: 10px;
+		   }
+	}
+}

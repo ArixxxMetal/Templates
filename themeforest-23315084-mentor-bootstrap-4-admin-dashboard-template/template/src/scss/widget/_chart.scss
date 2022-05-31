@@ -1,0 +1,42 @@
+.widget-chart-contant {
+    .img-icon{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        i{
+            font-size: 2rem;
+        }
+    }
+}
+
+.img-icon-box{
+    border-radius: 5px !important;
+}
+
+.img-icon-outline{
+    border-width: 3px;
+    border-style: solid;
+}
+.b-outline-primary,
+.b-primary{
+    border-color: $primary;
+}
+.b-outline-info,
+.b-info{
+    border-color: $info;
+}
+.b-outline-danger,
+.b-danger{
+    border-color: $danger;
+}
+
+.b-outline-warning,
+.b-warning{
+    border-color: $warning;
+}
+
+#cryptodemo6 {
+    &.chart-fit {
+    top:30px;
+    }
+}
